@@ -1,11 +1,12 @@
 package com.toastedbits.gfg.graphs.common;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collection;
 import java.util.Optional;
 
+@Slf4j
 public class AdjacencyMatrixGraph implements Graph {
     private int size;
     private int maxObserved;
@@ -70,7 +71,7 @@ public class AdjacencyMatrixGraph implements Graph {
 
     @Override
     public Collection<Edge> adjacent(final int vertex) {
-        ImmutableSet.Builder<Edge> builder = ImmutableSet.builder();
+        final ImmutableSet.Builder<Edge> builder = ImmutableSet.builder();
 
         if(vertex >= this.size) {
             return builder.build();
@@ -78,6 +79,7 @@ public class AdjacencyMatrixGraph implements Graph {
 
         for(int i = 0; i < this.size; ++i) {
             if(matrix[vertex][i] != 0) {
+                //log.debug("visit edge {} -> {}", vertex, i);
                 builder.add(Edge.to(i, matrix[vertex][i]));
             }
         }

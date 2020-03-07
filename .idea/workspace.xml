@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f99fac9-069d-4351-b543-586309f9b54f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/GFG2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/GFG-Graphs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GFG-Graphs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/GFG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/GFG2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyMatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyMatrixGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graphs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graphs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/GFG2.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="aDHZkzfS" />
@@ -47,16 +47,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="GFG2" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.GFG2">
     <configuration name="GFG1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG1" />
       <module name="GFG-Graphs" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
@@ -103,6 +108,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.GFG1" />
+      <item itemvalue="Application.GFG2" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GFG2" />
@@ -124,14 +133,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="872" y="361" key="#Project_Structure" timestamp="1583541169894">
+    <state x="872" y="361" key="#Project_Structure" timestamp="1583541992834">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="361" key="#Project_Structure/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541169894" />
-    <state x="734" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583540939031">
+    <state x="872" y="361" key="#Project_Structure/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541992834" />
+    <state x="734" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583542131419">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583540939031" />
+    <state x="734" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542131419" />
+    <state x="1007" y="392" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583541758336">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1007" y="392" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541758336" />
     <state x="1131" y="592" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583465473802">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -140,49 +153,66 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="860" y="358" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583465470779" />
-    <state x="1060" y="458" key="FileChooserDialogImpl" timestamp="1583539003576">
+    <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1583544144241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583539003576" />
-    <state width="2517" height="482" key="GridCell.Tab.0.bottom" timestamp="1583541115565">
+    <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583544144241" />
+    <state x="1060" y="458" key="FileChooserDialogImpl" timestamp="1583541971732">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115565" />
-    <state width="2517" height="482" key="GridCell.Tab.0.center" timestamp="1583541115565">
+    <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541971732" />
+    <state width="2517" height="392" key="GridCell.Tab.0.bottom" timestamp="1583544135855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115565" />
-    <state width="2517" height="482" key="GridCell.Tab.0.left" timestamp="1583541115565">
+    <state width="2517" height="392" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583544135855" />
+    <state width="2517" height="392" key="GridCell.Tab.0.center" timestamp="1583544135854">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115565" />
-    <state width="2517" height="482" key="GridCell.Tab.0.right" timestamp="1583541115565">
+    <state width="2517" height="392" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583544135854" />
+    <state width="2517" height="392" key="GridCell.Tab.0.left" timestamp="1583544135854">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115565" />
-    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1583541115387">
+    <state width="2517" height="392" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583544135854" />
+    <state width="2517" height="392" key="GridCell.Tab.0.right" timestamp="1583544135855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115387" />
-    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1583541115386">
+    <state width="2517" height="392" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583544135855" />
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1583542251619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115386" />
-    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1583541115386">
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542251619" />
+    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1583542251619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115386" />
-    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1583541115386">
+    <state width="2517" height="482" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542251619" />
+    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1583542251618">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541115386" />
-    <state x="783" y="345" key="SettingsEditor" timestamp="1583466608502">
+    <state width="2517" height="482" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542251618" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1583542251619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="783" y="345" key="SettingsEditor/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583466608502" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542251619" />
+    <state x="783" y="345" key="SettingsEditor" timestamp="1583542182374">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="783" y="345" key="SettingsEditor/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542182374" />
+    <state x="988" y="527" key="com.intellij.ide.util.TipDialog" timestamp="1583542276728">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="988" y="527" key="com.intellij.ide.util.TipDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542276728" />
     <state x="984" y="601" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583539046343">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="984" y="601" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583539046343" />
+    <state x="936" y="330" width="672" height="677" key="run.anything.popup" timestamp="1583542083850">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="330" width="672" height="677" key="run.anything.popup/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542083850" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GFG_Graphs$GFG1.ic" NAME="GFG1 Coverage Results" MODIFIED="1583541645208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
+    </SUITE>
   </component>
 </project>

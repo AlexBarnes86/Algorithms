@@ -1,18 +1,15 @@
 package com.toastedbits.gfg.graphs.common;
 
+import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
 @Value
+@RequiredArgsConstructor
 public class Edge {
-    private Edge(final int dest, final int weight) {
-        this.dest = dest;
-        this.weight = weight;
-    }
+    int dest;
+    int weight;
 
-    private final int dest;
-    private final int weight;
-
-    public static Edge to(final int dest, final int weight) {
+    public static Edge to(int dest, int weight) {
         return new Edge(dest, weight);
     }
 }
