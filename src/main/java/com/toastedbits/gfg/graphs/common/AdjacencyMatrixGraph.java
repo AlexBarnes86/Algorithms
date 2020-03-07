@@ -1,5 +1,9 @@
 package com.toastedbits.gfg.graphs.common;
 
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableSet;
+
+import java.util.Collection;
 import java.util.Optional;
 
 public class AdjacencyMatrixGraph implements Graph {
@@ -62,6 +66,23 @@ public class AdjacencyMatrixGraph implements Graph {
     @Override
     public boolean contains(final int src, final int dest) {
         return getWeight(src, dest).isPresent();
+    }
+
+    @Override
+    public Collection<Edge> adjacent(final int vertex) {
+        ImmutableSet.Builder<Edge> builder = ImmutableSet.builder();
+
+        if(vertex >= this.size) {
+            return builder.build();
+        }
+
+        for(int i = 0; i < this.size; ++i) {
+            if(matrix[vertex][i] != 0) {
+                builder.add(Edge.to(i, matrix[vertex][i]));
+            }
+        }
+
+        return builder.build();
     }
 
     @Override

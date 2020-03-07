@@ -1,6 +1,5 @@
 package com.toastedbits.gfg.graphs.common;
 
-import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
 @Value

@@ -1,8 +1,9 @@
 package com.toastedbits.gfg.graphs.common;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableSet;
+
+import java.util.*;
 
 public class AdjacencyListGraph implements Graph {
     private List<List<Edge>> list = new ArrayList<>();
@@ -45,6 +46,15 @@ public class AdjacencyListGraph implements Graph {
     @Override
     public boolean contains(final int src, final int dest) {
         return getWeight(src, dest).isPresent();
+    }
+
+    @Override
+    public Collection<Edge> adjacent(final int vertex) {
+        if(vertex >= list.size() || list.get(vertex) == null) {
+            return ImmutableSet.of();
+        }
+
+        return ImmutableSet.copyOf(list.get(vertex));
     }
 
     @Override
