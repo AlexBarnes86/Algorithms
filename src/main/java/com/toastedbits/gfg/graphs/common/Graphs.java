@@ -52,4 +52,34 @@ public class Graphs {
         stack.add(start);
         dfs_internal(graph, visitor, stack, new HashSet<>());
     }
+
+    public static boolean allReachable(@NonNull Graph graph, int start) {
+        final boolean[] visited = new boolean[graph.getSize()];
+        if(start >= graph.getSize()) {
+            return false;
+        }
+        dfs(graph, start, v -> visited[v] = true);
+        for(int i = 0; i < visited.length; ++i) {
+            if(!visited[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static Optional<Integer> findMotherVertex(@NonNull final Graph graph) {
+        final boolean[] visited = new boolean[graph.getSize()];
+        int mother_vertex = 0;
+        for(int i = 0; i < visited.length; ++i) {
+            if(!visited[i]) {
+                mother_vertex = i;
+            }
+            dfs(graph, i, v -> visited[v] = true);
+        }
+
+        if(allReachable(graph, mother_vertex)) {
+            return Optional.of(mother_vertex);
+        }
+        return Optional.empty();
+    }
 }

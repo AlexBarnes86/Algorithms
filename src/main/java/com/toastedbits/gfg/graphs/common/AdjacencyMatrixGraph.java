@@ -88,6 +88,11 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
+    public int getSize() {
+        return maxObserved + 1;
+    }
+
+    @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         for(int i = 0; i <= maxObserved; ++i) {

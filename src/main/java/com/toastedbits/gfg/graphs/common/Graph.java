@@ -9,4 +9,5 @@ public interface Graph {
     Optional<Integer> getWeight(final int src, final int dest);
     boolean contains(final int src, final int dest);
     Collection<Edge> adjacent(final int start);
+    int getSize();
 }

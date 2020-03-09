@@ -1,18 +1,26 @@
 package com.toastedbits.gfg.graphs.common;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 
 public class AdjacencyListGraph implements Graph {
-    private List<List<Edge>> list = new ArrayList<>();
+    private final List<List<Edge>> list;
+    private int maxObserved;
 
     AdjacencyListGraph() {
+        list = new ArrayList<>();
+        maxObserved = 0;
     }
 
     @Override
     public void addEdge(int src, int dest, int value) {
+        int fringe = Math.max(src, dest);
+        maxObserved = Math.max(maxObserved, fringe);
+
         while(src >= list.size()) {
             list.add(null);
         }
@@ -55,6 +63,11 @@ public class AdjacencyListGraph implements Graph {
         }
 
         return ImmutableSet.copyOf(list.get(vertex));
+    }
+
+    @Override
+    public int getSize() {
+        return maxObserved + 1;
     }
 
     @Override

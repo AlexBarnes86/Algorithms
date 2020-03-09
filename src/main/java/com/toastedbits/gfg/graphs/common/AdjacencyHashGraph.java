@@ -3,17 +3,24 @@ package com.toastedbits.gfg.graphs.common;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
 class AdjacencyHashGraph implements Graph {
-    private final Map<Integer, Map<Integer, Integer>> graph = new HashMap<>();
+    private int maxObserved = 0;
+    private final Map<Integer, Map<Integer, Integer>> graph;
+
+    AdjacencyHashGraph() {
+        maxObserved = 0;
+        graph = new HashMap<>();
+    }
 
     @Override
     public void addEdge(final int src, final int dest, final int value) {
+        int fringe = Math.max(src, dest);
+        maxObserved = Math.max(maxObserved, fringe);
         final Map<Integer, Integer> edges = graph.computeIfAbsent(src, HashMap::new);
         edges.put(dest, value);
     }
@@ -48,6 +55,11 @@ class AdjacencyHashGraph implements Graph {
         }
 
         return adj;
+    }
+
+    @Override
+    public int getSize() {
+        return maxObserved + 1;
     }
 
     @Override
