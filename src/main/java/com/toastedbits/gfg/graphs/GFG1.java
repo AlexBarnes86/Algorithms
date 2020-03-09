@@ -29,5 +29,6 @@ public class GFG1 {
     public static void main(@NonNull final String[] args) {
         testGraph(Graphs.adjacencyListGraph());
         testGraph(Graphs.adjacencyMatrixGraph());
+        testGraph(Graphs.adjacencyHashGraph());
     }
 }

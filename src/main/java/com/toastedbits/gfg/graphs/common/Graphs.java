@@ -15,6 +15,10 @@ public class Graphs {
         return new AdjacencyMatrixGraph();
     }
 
+    public static AdjacencyHashGraph adjacencyHashGraph() {
+        return new AdjacencyHashGraph();
+    }
+
     private static void bfs_internal(@NonNull final Graph graph, @NonNull final Consumer<Integer> visitor, @NonNull final Queue<Integer> queue, @NonNull final Set<Integer> visited) {
         while(!queue.isEmpty()) {
             int vertex = queue.remove();
