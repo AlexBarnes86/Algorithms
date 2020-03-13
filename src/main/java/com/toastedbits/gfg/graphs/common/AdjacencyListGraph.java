@@ -31,9 +31,20 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public void addUndirectedEdge(int a, int b, int value) {
-        addEdge(a, b, value);
-        addEdge(b, a, value);
+    public void deleteEdge(int src, int dest) {
+        if(src < list.size()) {
+            list.get(src).removeIf(e -> e.getDest() == dest);
+        }
+    }
+
+    @Override
+    public void deleteVertex(final int vert) {
+        if(vert < list.size()) {
+            for(final DWEdge edge : getAdjacent(vert)) {
+                deleteUndirectedEdge(vert, edge.getDest());
+            }
+            list.set(vert, null);
+        }
     }
 
     @Override
@@ -57,7 +68,7 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public Collection<DWEdge> adjacent(final int vertex) {
+    public Collection<DWEdge> getAdjacent(final int vertex) {
         if(vertex >= list.size() || list.get(vertex) == null) {
             return ImmutableSet.of();
         }
@@ -66,8 +77,8 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public int getSize() {
-        return maxObserved + 1;
+    public int getMaxObserved() {
+        return maxObserved;
     }
 
     @Override
@@ -75,7 +86,7 @@ public class AdjacencyListGraph implements Graph {
         final StringBuilder sb = new StringBuilder();
         for(int i = 0; i < list.size(); ++i) {
             final List<DWEdge> edges = list.get(i);
-            sb.append(i + " -> " + edges);
+            sb.append(i).append(" -> ").append(edges);
             if(i != list.size() - 1) {
                 sb.append(", ");
             }

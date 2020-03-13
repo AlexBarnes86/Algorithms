@@ -19,9 +19,9 @@ public class GFG8 {
         log.info("Graph {}\n{}", graph.getClass(), graph);
         boolean[][] reachability = Graphs.transitiveClosure(graph);
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < reachability.length; ++i) {
-            for(int j = 0; j < reachability.length; ++j) {
-                sb.append(reachability[i][j] == true ? "1 " : "0 ");
+        for (boolean[] reachable : reachability) {
+            for (boolean dest : reachable) {
+                sb.append(dest ? "1 " : "0 ");
             }
             sb.append("\n");
         }

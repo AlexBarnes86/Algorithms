@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Optional;
 
 class AdjacencyHashGraph implements Graph {
-    private int maxObserved = 0;
+    private int maxObserved;
     private final Map<Integer, Map<Integer, Integer>> graph;
 
     AdjacencyHashGraph() {
@@ -21,14 +21,26 @@ class AdjacencyHashGraph implements Graph {
     public void addEdge(final int src, final int dest, final int value) {
         int fringe = Math.max(src, dest);
         maxObserved = Math.max(maxObserved, fringe);
+
         final Map<Integer, Integer> edges = graph.computeIfAbsent(src, HashMap::new);
         edges.put(dest, value);
     }
 
     @Override
-    public void addUndirectedEdge(final int a, final int b, final int value) {
-        addEdge(a, b, value);
-        addEdge(b, a, value);
+    public void deleteEdge(final int src, final int dest) {
+        if (graph.containsKey(src)) {
+            graph.get(src).remove(dest);
+        }
+    }
+
+    @Override
+    public void deleteVertex(final int vert) {
+        if(graph.containsKey(vert)) {
+            for(final DWEdge edge : getAdjacent(vert)) {
+                deleteUndirectedEdge(vert, edge.getDest());
+            }
+            graph.remove(vert);
+        }
     }
 
     @Override
@@ -47,8 +59,8 @@ class AdjacencyHashGraph implements Graph {
     }
 
     @Override
-    public Collection<DWEdge> adjacent(final int start) {
-        final Map<Integer, Integer> edges = graph.get(start);
+    public Collection<DWEdge> getAdjacent(final int vert) {
+        final Map<Integer, Integer> edges = graph.get(vert);
         final List<DWEdge> adj = new ArrayList<>();
         if(edges != null) {
             for (Map.Entry<Integer, Integer> edge : edges.entrySet()) {
@@ -60,8 +72,8 @@ class AdjacencyHashGraph implements Graph {
     }
 
     @Override
-    public int getSize() {
-        return maxObserved + 1;
+    public int getMaxObserved() {
+        return maxObserved;
     }
 
     @Override
@@ -77,13 +89,13 @@ class AdjacencyHashGraph implements Graph {
                 sb.append("\n");
             }
             firstVert = false;
-            sb.append(vertIdx + " -> ");
+            sb.append(vertIdx).append(" -> ");
             boolean firstEdge = true;
             for(Map.Entry<Integer, Integer> edge : graph.get(vertIdx).entrySet()) {
                 if(!firstEdge) {
                     sb.append(", ");
                 }
-                sb.append("(" + edge.getKey() + ", " + edge.getValue() + ")");
+                sb.append("(").append(edge.getKey()).append(", ").append(edge.getValue()).append(")");
                 firstEdge = false;
             }
         }

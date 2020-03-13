@@ -26,9 +26,7 @@ public class AdjacencyMatrixGraph implements Graph {
 
         int[][] next = new int[this.size][this.size];
         for(int i = 0; i < copySize; ++i) {
-            for(int j = 0; j < copySize; ++j) {
-                next[i][j] = matrix[i][j];
-            }
+            System.arraycopy(matrix[i], 0, next[i], 0, copySize);
         }
 
         matrix = next;
@@ -46,9 +44,20 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public void addUndirectedEdge(final int a, final int b, final int value) {
-        addEdge(a, b, value);
-        addEdge(b, a, value);
+    public void deleteEdge(final int src, final int dest) {
+        if(src < matrix.length && dest < matrix.length) {
+            matrix[src][dest] = 0;
+        }
+    }
+
+    @Override
+    public void deleteVertex(final int vert) {
+        if(vert < matrix.length) {
+            for(final DWEdge edge : getAdjacent(vert)) {
+                deleteUndirectedEdge(vert, edge.getDest());
+            }
+            matrix[vert][vert] = 0;
+        }
     }
 
     @Override
@@ -70,7 +79,7 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public Collection<DWEdge> adjacent(final int vertex) {
+    public Collection<DWEdge> getAdjacent(final int vertex) {
         final ImmutableSet.Builder<DWEdge> builder = ImmutableSet.builder();
 
         if(vertex >= this.size) {
@@ -88,8 +97,8 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public int getSize() {
-        return maxObserved + 1;
+    public int getMaxObserved() {
+        return maxObserved;
     }
 
     @Override

@@ -1,11 +1,14 @@
 package com.toastedbits.gfg.graphs.common;
 
 import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
+@Slf4j
 public class Graphs {
     public static AdjacencyListGraph adjacencyListGraph() {
         return new AdjacencyListGraph();
@@ -25,7 +28,7 @@ public class Graphs {
             if(!visited.contains(vertex)) {
                 visitor.accept(vertex);
                 visited.add(vertex);
-                queue.addAll(graph.adjacent(vertex).stream().map(DWEdge::getDest).collect(Collectors.toList()));
+                queue.addAll(graph.getAdjacent(vertex).stream().map(DWEdge::getDest).collect(Collectors.toList()));
             }
         }
     }
@@ -42,7 +45,7 @@ public class Graphs {
             if(!visited.contains(vertex)) {
                 visitor.accept(vertex);
                 visited.add(vertex);
-                graph.adjacent(vertex).stream().map(DWEdge::getDest).forEach(stack::push);
+                graph.getAdjacent(vertex).stream().map(DWEdge::getDest).forEach(stack::push);
             }
         }
     }
@@ -59,8 +62,8 @@ public class Graphs {
             return false;
         }
         dfs(graph, start, v -> visited[v] = true);
-        for(int i = 0; i < visited.length; ++i) {
-            if(!visited[i]) {
+        for (boolean v : visited) {
+            if (!v) {
                 return false;
             }
         }
@@ -92,7 +95,7 @@ public class Graphs {
             while(!stack.isEmpty()) {
                 SDWEdge sd = stack.pop();
                 reachable[sd.getSrc()][sd.getDest()] = true;
-                for (final DWEdge adj : graph.adjacent(sd.getDest())) {
+                for (final DWEdge adj : graph.getAdjacent(sd.getDest())) {
                     if (!reachable[sd.getSrc()][adj.getDest()]) {
                         stack.push(Edges.between(sd.getSrc(), adj.getDest()));
                     }
@@ -101,5 +104,22 @@ public class Graphs {
         }
 
         return reachable;
+    }
+
+    public static void kCore(@NonNull final Graph graph, final int k) {
+        boolean updatesMade = true;
+        Set<Integer> nodes = IntStream.range(0, graph.getSize()).boxed().collect(Collectors.toSet());
+        while(updatesMade && !nodes.isEmpty()) {
+            updatesMade = false;
+            for(Iterator<Integer> itr = nodes.iterator(); itr.hasNext();) {
+                int node = itr.next();
+                if(graph.getAdjacent(node).size() < k) {
+                    log.debug("Deleting node: {}", node);
+                    itr.remove();
+                    graph.deleteVertex(node);
+                    updatesMade = true;
+                }
+            }
+        }
     }
 }
