@@ -47,11 +47,13 @@ class AdjacencyHashGraph implements Graph {
     }
 
     @Override
-    public Collection<Edge> adjacent(final int start) {
+    public Collection<DWEdge> adjacent(final int start) {
         final Map<Integer, Integer> edges = graph.get(start);
-        final List<Edge> adj = new ArrayList<>();
-        for(Map.Entry<Integer, Integer> edge : edges.entrySet()) {
-            adj.add(Edge.to(edge.getKey(), edge.getValue()));
+        final List<DWEdge> adj = new ArrayList<>();
+        if(edges != null) {
+            for (Map.Entry<Integer, Integer> edge : edges.entrySet()) {
+                adj.add(Edges.to(edge.getKey(), edge.getValue()));
+            }
         }
 
         return adj;

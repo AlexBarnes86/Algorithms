@@ -70,8 +70,8 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public Collection<Edge> adjacent(final int vertex) {
-        final ImmutableSet.Builder<Edge> builder = ImmutableSet.builder();
+    public Collection<DWEdge> adjacent(final int vertex) {
+        final ImmutableSet.Builder<DWEdge> builder = ImmutableSet.builder();
 
         if(vertex >= this.size) {
             return builder.build();
@@ -80,7 +80,7 @@ public class AdjacencyMatrixGraph implements Graph {
         for(int i = 0; i < this.size; ++i) {
             if(matrix[vertex][i] != 0) {
                 //log.debug("visit edge {} -> {}", vertex, i);
-                builder.add(Edge.to(i, matrix[vertex][i]));
+                builder.add(Edges.to(i, matrix[vertex][i]));
             }
         }
 

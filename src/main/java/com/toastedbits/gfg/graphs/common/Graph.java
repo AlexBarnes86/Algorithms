@@ -8,6 +8,6 @@ public interface Graph {
     void addUndirectedEdge(int a, int b, int value);
     Optional<Integer> getWeight(final int src, final int dest);
     boolean contains(final int src, final int dest);
-    Collection<Edge> adjacent(final int start);
+    Collection<DWEdge> adjacent(final int start);
     int getSize();
 }

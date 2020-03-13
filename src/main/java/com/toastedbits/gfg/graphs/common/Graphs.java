@@ -25,7 +25,7 @@ public class Graphs {
             if(!visited.contains(vertex)) {
                 visitor.accept(vertex);
                 visited.add(vertex);
-                queue.addAll(graph.adjacent(vertex).stream().map(Edge::getDest).collect(Collectors.toList()));
+                queue.addAll(graph.adjacent(vertex).stream().map(DWEdge::getDest).collect(Collectors.toList()));
             }
         }
     }
@@ -42,7 +42,7 @@ public class Graphs {
             if(!visited.contains(vertex)) {
                 visitor.accept(vertex);
                 visited.add(vertex);
-                graph.adjacent(vertex).stream().map(Edge::getDest).forEach(stack::push);
+                graph.adjacent(vertex).stream().map(DWEdge::getDest).forEach(stack::push);
             }
         }
     }
@@ -81,5 +81,25 @@ public class Graphs {
             return Optional.of(mother_vertex);
         }
         return Optional.empty();
+    }
+
+    public static boolean[][] transitiveClosure(@NonNull final Graph graph) {
+        final boolean [][] reachable = new boolean[graph.getSize()][graph.getSize()];
+        final Deque<SDWEdge> stack = new ArrayDeque<>();
+
+        for(int vertex = 0; vertex < graph.getSize(); vertex++) {
+            stack.push(Edges.between(vertex, vertex));
+            while(!stack.isEmpty()) {
+                SDWEdge sd = stack.pop();
+                reachable[sd.getSrc()][sd.getDest()] = true;
+                for (final DWEdge adj : graph.adjacent(sd.getDest())) {
+                    if (!reachable[sd.getSrc()][adj.getDest()]) {
+                        stack.push(Edges.between(sd.getSrc(), adj.getDest()));
+                    }
+                }
+            }
+        }
+
+        return reachable;
     }
 }

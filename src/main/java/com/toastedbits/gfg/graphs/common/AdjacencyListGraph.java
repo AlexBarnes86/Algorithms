@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class AdjacencyListGraph implements Graph {
-    private final List<List<Edge>> list;
+    private final List<List<DWEdge>> list;
     private int maxObserved;
 
     AdjacencyListGraph() {
@@ -27,7 +27,7 @@ public class AdjacencyListGraph implements Graph {
         if(list.get(src) == null) {
             list.set(src, new ArrayList<>());
         }
-        list.get(src).add(Edge.to(dest, value));
+        list.get(src).add(Edges.to(dest, value));
     }
 
     @Override
@@ -42,7 +42,7 @@ public class AdjacencyListGraph implements Graph {
             return Optional.empty();
         }
 
-        for(final Edge edge : list.get(src)) {
+        for(final DWEdge edge : list.get(src)) {
             if(edge.getDest() == dest) {
                 return Optional.of(edge.getWeight());
             }
@@ -57,7 +57,7 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public Collection<Edge> adjacent(final int vertex) {
+    public Collection<DWEdge> adjacent(final int vertex) {
         if(vertex >= list.size() || list.get(vertex) == null) {
             return ImmutableSet.of();
         }
@@ -74,7 +74,7 @@ public class AdjacencyListGraph implements Graph {
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         for(int i = 0; i < list.size(); ++i) {
-            final List<Edge> edges = list.get(i);
+            final List<DWEdge> edges = list.get(i);
             sb.append(i + " -> " + edges);
             if(i != list.size() - 1) {
                 sb.append(", ");
