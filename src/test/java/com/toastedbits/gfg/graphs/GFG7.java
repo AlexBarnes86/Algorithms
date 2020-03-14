@@ -2,6 +2,7 @@ package com.toastedbits.gfg.graphs;
 
 import com.toastedbits.gfg.graphs.common.Graph;
 import com.toastedbits.gfg.graphs.common.Graphs;
+import com.toastedbits.gfg.graphs.common.algorithms.GraphMotherVertex;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 
@@ -23,7 +24,7 @@ public class GFG7 {
     private static void test(@NonNull final Graph graph) {
         addGraphData1(graph);
         log.info("Graph {}\n{}", graph.getClass(), graph);
-        Optional<Integer> mother = Graphs.findMotherVertex(graph);
+        Optional<Integer> mother = GraphMotherVertex.findMotherVertex(graph);
         log.info("Mother vertex is {}", mother);
     }
 

@@ -2,6 +2,7 @@ package com.toastedbits.gfg.graphs;
 
 import com.toastedbits.gfg.graphs.common.Graph;
 import com.toastedbits.gfg.graphs.common.Graphs;
+import com.toastedbits.gfg.graphs.common.algorithms.GraphTransitiveClosure;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -17,7 +18,7 @@ public class GFG8 {
     private static void test(Graph graph) {
         addData1(graph);
         log.info("Graph {}\n{}", graph.getClass(), graph);
-        boolean[][] reachability = Graphs.transitiveClosure(graph);
+        boolean[][] reachability = GraphTransitiveClosure.transitiveClosure(graph);
         StringBuilder sb = new StringBuilder();
         for (boolean[] reachable : reachability) {
             for (boolean dest : reachable) {

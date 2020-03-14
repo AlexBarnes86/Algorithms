@@ -1,5 +1,8 @@
 package com.toastedbits.gfg.graphs.common;
 
+import lombok.ToString;
+
+@ToString
 public class SDWEdge extends DWEdge {
     private final int src;
 

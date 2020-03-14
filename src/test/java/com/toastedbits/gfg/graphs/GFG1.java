@@ -1,13 +1,33 @@
 package com.toastedbits.gfg.graphs;
 
+import com.toastedbits.gfg.graphs.common.DWEdge;
 import com.toastedbits.gfg.graphs.common.Graph;
 import com.toastedbits.gfg.graphs.common.Graphs;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.hasItems;
 
 @Slf4j
 public class GFG1 {
-    public static void testGraph(@NonNull final Graph graph) {
+    private static Stream<Graph> createGraphs() {
+        return Stream.of(
+            Graphs.adjacencyListGraph(),
+            Graphs.adjacencyMatrixGraph(),
+            Graphs.adjacencyHashGraph()
+        );
+    }
+
+    @ParameterizedTest
+    @MethodSource("createGraphs")
+    public void testSimpleGraph(@NonNull final Graph graph) {
         graph.addEdge(0, 1, 1);
         graph.addEdge(0, 4, 1);
         graph.addEdge(1, 0, 1);
@@ -24,11 +44,12 @@ public class GFG1 {
         graph.addEdge(4, 1, 1);
 
         log.info("Graph: {}\n{}", graph.getClass(), graph.toString());
-    }
 
-    public static void main(@NonNull final String[] args) {
-        testGraph(Graphs.adjacencyListGraph());
-        testGraph(Graphs.adjacencyMatrixGraph());
-        testGraph(Graphs.adjacencyHashGraph());
+        assertThat(5, is(graph.getSize()));
+        assertThat(graph.getAdjacent(0).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 4));
+        assertThat(graph.getAdjacent(1).stream().map(DWEdge::getDest).collect(toList()), hasItems(0, 2, 3, 4));
+        assertThat(graph.getAdjacent(2).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 3));
+        assertThat(graph.getAdjacent(3).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 2, 4));
+        assertThat(graph.getAdjacent(4).stream().map(DWEdge::getDest).collect(toList()), hasItems(0, 1, 3));
     }
 }

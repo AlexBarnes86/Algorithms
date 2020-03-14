@@ -2,6 +2,7 @@ package com.toastedbits.gfg.graphs;
 
 import com.toastedbits.gfg.graphs.common.Graph;
 import com.toastedbits.gfg.graphs.common.Graphs;
+import com.toastedbits.gfg.graphs.common.algorithms.GraphKCore;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 
@@ -29,7 +30,7 @@ public class GFG9 {
     private static void test(Graph graph) {
         addData1(graph);
         log.info("Graph {}\n{}", graph.getClass(), graph);
-        Graphs.kCore(graph, 3); //2, 3, 4, 6, 7
+        GraphKCore.kCore(graph, 3); //2, 3, 4, 6, 7
         log.info("3-Core\n{}", graph);
     }
 
