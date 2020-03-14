@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f99fac9-069d-4351-b543-586309f9b54f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/EdgeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyHashGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyHashGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphReachable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphReachable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584209746838</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add All Paths Finding&#10;&#10;Improve Coverage (Remove dead code)">
+      <created>1584218627382</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584218627382</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -263,7 +265,8 @@
     <MESSAGE value="Add Transitive Closure" />
     <MESSAGE value="Add KCores" />
     <MESSAGE value="Add JUnit Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add JUnit Tests" />
+    <MESSAGE value="Add All Paths Finding&#10;&#10;Improve Coverage (Remove dead code)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add All Paths Finding&#10;&#10;Improve Coverage (Remove dead code)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="361" width="1167" height="677" key="#Project_Structure" timestamp="1584142839517">
@@ -310,10 +313,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1035" y="409" key="#xdebugger.evaluate/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206502525" />
-    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584209745953">
+    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584219542708">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584209745953" />
+    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584219542708" />
     <state width="404" height="466" key="DebuggerActiveHint" timestamp="1584213974814">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -322,22 +325,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541971732" />
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584218567075">
+    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584219545042">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567075" />
-    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584218567074">
+    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584219545042" />
+    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584219545041">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567074" />
-    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584218567074">
+    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584219545041" />
+    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584219545041">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567074" />
-    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584218567074">
+    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584219545041" />
+    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584219545041">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567074" />
+    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584219545041" />
     <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584218201855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -397,7 +400,7 @@
     <SUITE FILE_PATH="coverage/GFG_Graphs$AdjacencyMatrixTests_testResize.ic" NAME="AdjacencyMatrixTests.testResize Coverage Results" MODIFIED="1584208734921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/GFG_Graphs$com_toastedbits_gfg_graphs_in_GFG_Graphs.ic" NAME="com.toastedbits.gfg.graphs in GFG-Graphs Coverage Results" MODIFIED="1584218567034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/GFG_Graphs$com_toastedbits_gfg_graphs_in_GFG_Graphs.ic" NAME="com.toastedbits.gfg.graphs in GFG-Graphs Coverage Results" MODIFIED="1584219449441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
     </SUITE>
   </component>
