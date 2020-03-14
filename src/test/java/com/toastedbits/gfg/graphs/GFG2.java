@@ -60,9 +60,9 @@ public class GFG2 {
     public void testBfs(@NonNull final Graph graph) {
         log.info("Graph BFS {}\n{}", graph.getClass(), graph);
         final List<Integer> visited = new ArrayList<>();
-        GraphBFS.bfs(graph, 0, i -> {
-            visited.add(i);
-            log.info("{}", i);
+        GraphBFS.bfs(graph, 0, e -> {
+            visited.add(e.getDest());
+            log.info("{}", e.getDest());
         });
         assertThat(visited.get(0), equalTo(0));
         assertThat(visited.get(5), equalTo(5));

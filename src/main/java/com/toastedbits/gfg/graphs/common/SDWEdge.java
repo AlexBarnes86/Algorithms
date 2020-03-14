@@ -4,9 +4,9 @@ import lombok.ToString;
 
 @ToString
 public class SDWEdge extends DWEdge {
-    private final int src;
+    private final Integer src;
 
-    SDWEdge(int src, int dest, int weight) {
+    SDWEdge(final Integer src, final Integer dest, final Integer weight) {
         super(dest, weight);
         this.src = src;
     }

@@ -1,35 +1,22 @@
 package com.toastedbits.gfg.graphs;
 
-import com.google.common.collect.ImmutableList;
 import com.toastedbits.gfg.graphs.common.AdjacencyMatrixGraph;
-import com.toastedbits.gfg.graphs.common.DWEdge;
 import com.toastedbits.gfg.graphs.common.Graph;
 import com.toastedbits.gfg.graphs.common.Graphs;
 import com.toastedbits.gfg.graphs.common.algorithms.GraphKCore;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
-import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.List;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.toList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @Slf4j
 public class GFG9 {
-    private static Stream<Graph> createGraphs() {
-        return Stream.of(
-            addData(Graphs.adjacencyListGraph()),
-            addData(Graphs.adjacencyMatrixGraph()),
-            addData(Graphs.adjacencyHashGraph())
-        );
-    }
-
     @ParameterizedTest
     @MethodSource("createGraphs")
     public void test(@NonNull final Graph graph) {
@@ -49,6 +36,14 @@ public class GFG9 {
             assertFalse(graph.containsVertex(5));
             assertFalse(graph.containsVertex(8));
         }
+    }
+
+    private static Stream<Graph> createGraphs() {
+        return Stream.of(
+            addData(Graphs.adjacencyListGraph()),
+            addData(Graphs.adjacencyMatrixGraph()),
+            addData(Graphs.adjacencyHashGraph())
+        );
     }
 
     private static Graph addData(@NonNull final Graph graph) {

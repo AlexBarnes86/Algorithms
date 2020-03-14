@@ -7,6 +7,10 @@ import static java.util.stream.Collectors.toList;
 
 public interface Graph {
     void addEdge(int src, int dest, int value);
+    default void addEdge(int src, int dest) {
+        addEdge(src, dest, 1);
+    }
+
     default void addUndirectedEdge(int a, int b, int value) {
         addEdge(a, b, value);
         addEdge(b, a, value);

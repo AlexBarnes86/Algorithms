@@ -1,31 +1,54 @@
 package com.toastedbits.gfg.graphs.common.algorithms;
 
-import com.toastedbits.gfg.graphs.common.DWEdge;
+import com.toastedbits.gfg.graphs.common.Edges;
 import com.toastedbits.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.SDWEdge;
 import lombok.NonNull;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class GraphBFS {
-    public static void bfs_internal(@NonNull final Graph graph, @NonNull final Consumer<Integer> visitor, @NonNull final Queue<Integer> queue, @NonNull final Set<Integer> visited) {
+    private static void bfs_internal(@NonNull final Graph graph, @NonNull final Consumer<SDWEdge> visitor, @NonNull final Queue<SDWEdge> queue, @NonNull final Set<Integer> visited) {
         while(!queue.isEmpty()) {
-            int vertex = queue.remove();
-            if(!visited.contains(vertex)) {
-                visitor.accept(vertex);
-                visited.add(vertex);
-                queue.addAll(graph.getAdjacentEdges(vertex).stream().map(DWEdge::getDest).collect(Collectors.toList()));
+            final SDWEdge edge = queue.remove();
+            if(!visited.contains(edge.getDest())) {
+                visitor.accept(edge);
+                visited.add(edge.getDest());
+                queue.addAll(graph
+                    .getAdjacentEdges(edge.getDest())
+                    .stream()
+                    .map(e -> Edges.weighted(
+                        edge.getDest(),
+                        e.getDest(),
+                        e.getWeight()))
+                    .collect(Collectors.toList()));
             }
         }
     }
 
-    public static void bfs(@NonNull final Graph graph, final int start, @NonNull final Consumer<Integer> visitor) {
-        Queue<Integer> queue = new ArrayDeque<>();
-        queue.add(start);
+    public static void bfs(@NonNull final Graph graph, final int start, @NonNull final Consumer<SDWEdge> visitor) {
+        Queue<SDWEdge> queue = new ArrayDeque<>();
+        queue.add(Edges.weighted(start, start, Integer.MAX_VALUE));
         GraphBFS.bfs_internal(graph, visitor, queue, new HashSet<>());
+    }
+
+    public static Map<Integer, Integer> findLevels(@NonNull final Graph graph) {
+        final Map<Integer, Integer> levels = new HashMap<>();
+        levels.put(0, -1);
+        GraphBFS.bfs(graph, 0, visit -> {
+            int level = levels.get(visit.getSrc()) + 1;
+            levels.put(visit.getDest(), level);
+        });
+        return levels;
     }
 }
