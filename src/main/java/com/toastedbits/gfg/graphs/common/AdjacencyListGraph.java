@@ -59,9 +59,6 @@ public class AdjacencyListGraph implements Graph {
     public Optional<Integer> getWeight(final int src, final int dest) {
         checkArgument(containsVertex(src), "No source vertex: " + src);
         checkArgument(containsVertex(dest), "No destination vertex: " + dest);
-        if(src >= list.size() || list.get(src) == null) {
-            return Optional.empty();
-        }
 
         for(final DWEdge edge : list.get(src)) {
             if(edge.getDest() == dest) {
@@ -87,10 +84,6 @@ public class AdjacencyListGraph implements Graph {
     @Override
     public Collection<DWEdge> getAdjacentEdges(final int src) {
         checkArgument(containsVertex(src), "No source vertex: " + src);
-        if(src >= list.size() || list.get(src) == null) {
-            return ImmutableSet.of();
-        }
-
         return ImmutableSet.copyOf(list.get(src));
     }
 

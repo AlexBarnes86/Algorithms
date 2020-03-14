@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f99fac9-069d-4351-b543-586309f9b54f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/EdgeTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyHashGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyHashGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="568" />
+    <option name="myElementSize" value="572" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,7 +73,7 @@
       <command value="GFG2" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GFG10">
+  <component name="RunManager" selected="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -123,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GFG9.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GFG11.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GFG-Graphs" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +138,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG9" />
+      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG11" />
       <option name="METHOD_NAME" value="test(com.toastedbits.gfg.graphs.common.Graph)" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -172,19 +178,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BasicGraphTests" />
-      <item itemvalue="JUnit.BasicGraphTests.testResize" />
-      <item itemvalue="JUnit.GFG10" />
-      <item itemvalue="JUnit.GFG9.test" />
       <item itemvalue="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs" />
+      <item itemvalue="JUnit.BasicGraphTests.testResize" />
+      <item itemvalue="JUnit.BasicGraphTests" />
+      <item itemvalue="JUnit.GFG10" />
+      <item itemvalue="JUnit.GFG11.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GFG10" />
         <item itemvalue="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs" />
+        <item itemvalue="JUnit.GFG11.test" />
+        <item itemvalue="JUnit.GFG10" />
         <item itemvalue="JUnit.BasicGraphTests" />
         <item itemvalue="JUnit.BasicGraphTests.testResize" />
-        <item itemvalue="JUnit.GFG9.test" />
       </list>
     </recent_temporary>
   </component>
@@ -316,38 +322,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541971732" />
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584215003257">
+    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584218567075">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584215003257" />
-    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584215003257">
+    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567075" />
+    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584218567074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584215003257" />
-    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584215003257">
+    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567074" />
+    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584218567074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584215003257" />
-    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584215003257">
+    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567074" />
+    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584218567074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584215003257" />
-    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584214048566">
+    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218567074" />
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584218201855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584214048566" />
-    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1584214048566">
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218201855" />
+    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1584218201854">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584214048566" />
-    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1584214048566">
+    <state width="2517" height="482" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218201854" />
+    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1584218201854">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584214048566" />
-    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1584214048566">
+    <state width="2517" height="482" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218201854" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1584218201855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584214048566" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584218201855" />
     <state x="999" y="410" width="562" height="572" key="RefactorJ.ExtractClass" timestamp="1583881925605">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -391,7 +397,7 @@
     <SUITE FILE_PATH="coverage/GFG_Graphs$AdjacencyMatrixTests_testResize.ic" NAME="AdjacencyMatrixTests.testResize Coverage Results" MODIFIED="1584208734921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/GFG_Graphs$com_toastedbits_gfg_graphs_in_GFG_Graphs.ic" NAME="com.toastedbits.gfg.graphs in GFG-Graphs Coverage Results" MODIFIED="1584209865483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/GFG_Graphs$com_toastedbits_gfg_graphs_in_GFG_Graphs.ic" NAME="com.toastedbits.gfg.graphs in GFG-Graphs Coverage Results" MODIFIED="1584218567034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
     </SUITE>
   </component>

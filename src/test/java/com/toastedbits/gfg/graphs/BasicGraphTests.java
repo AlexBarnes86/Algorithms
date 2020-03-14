@@ -36,6 +36,7 @@ public class BasicGraphTests {
         //Choose a large number to force a resize
         for(int i = 0; i < 100; ++i) {
             graph.addEdge(i, i, 1);
+            assertTrue(graph.containsEdge(i, i));
             assertThat(graph.getAdjacentVertecies(i), CoreMatchers.hasItem(i));
             assertThat(graph.getWeight(i, i), equalTo(Optional.of(1)));
             assertThat(graph.getAdjacentEdges(i), hasItem(Edges.to(i, 1)));

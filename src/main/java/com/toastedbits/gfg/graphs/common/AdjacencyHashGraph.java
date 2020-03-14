@@ -54,10 +54,7 @@ class AdjacencyHashGraph implements Graph {
         checkArgument(containsVertex(src), "No source vertex: " + src);
         checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         final Map<Integer, Integer> edges = graph.get(src);
-        if(edges != null) {
-            return Optional.ofNullable(edges.get(dest));
-        }
-        return Optional.empty();
+        return Optional.ofNullable(edges.get(dest));
     }
 
     @Override
@@ -76,9 +73,6 @@ class AdjacencyHashGraph implements Graph {
     @Override
     public Collection<DWEdge> getAdjacentEdges(final int src) {
         checkArgument(containsVertex(src), "No source vertex: " + src);
-        if(!containsVertex(src)) {
-            throw new IllegalArgumentException("No source vertex: " + src);
-        }
         final Map<Integer, Integer> edges = graph.get(src);
         final List<DWEdge> adj = new ArrayList<>();
         if(edges != null) {
