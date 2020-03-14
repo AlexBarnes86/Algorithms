@@ -19,15 +19,26 @@ import static org.hamcrest.Matchers.hasItems;
 public class GFG1 {
     private static Stream<Graph> createGraphs() {
         return Stream.of(
-            Graphs.adjacencyListGraph(),
-            Graphs.adjacencyMatrixGraph(),
-            Graphs.adjacencyHashGraph()
+            addData(Graphs.adjacencyListGraph()),
+            addData(Graphs.adjacencyMatrixGraph()),
+            addData(Graphs.adjacencyHashGraph())
         );
     }
 
     @ParameterizedTest
     @MethodSource("createGraphs")
     public void testSimpleGraph(@NonNull final Graph graph) {
+        log.info("Graph: {}\n{}", graph.getClass(), graph.toString());
+
+        assertThat(5, is(graph.getSize()));
+        assertThat(graph.getAdjacentEdges(0).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 4));
+        assertThat(graph.getAdjacentEdges(1).stream().map(DWEdge::getDest).collect(toList()), hasItems(0, 2, 3, 4));
+        assertThat(graph.getAdjacentEdges(2).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 3));
+        assertThat(graph.getAdjacentEdges(3).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 2, 4));
+        assertThat(graph.getAdjacentEdges(4).stream().map(DWEdge::getDest).collect(toList()), hasItems(0, 1, 3));
+    }
+
+    private static Graph addData(@NonNull final Graph graph) {
         graph.addEdge(0, 1, 1);
         graph.addEdge(0, 4, 1);
         graph.addEdge(1, 0, 1);
@@ -43,13 +54,6 @@ public class GFG1 {
         graph.addEdge(4, 0, 1);
         graph.addEdge(4, 1, 1);
 
-        log.info("Graph: {}\n{}", graph.getClass(), graph.toString());
-
-        assertThat(5, is(graph.getSize()));
-        assertThat(graph.getAdjacent(0).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 4));
-        assertThat(graph.getAdjacent(1).stream().map(DWEdge::getDest).collect(toList()), hasItems(0, 2, 3, 4));
-        assertThat(graph.getAdjacent(2).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 3));
-        assertThat(graph.getAdjacent(3).stream().map(DWEdge::getDest).collect(toList()), hasItems(1, 2, 4));
-        assertThat(graph.getAdjacent(4).stream().map(DWEdge::getDest).collect(toList()), hasItems(0, 1, 3));
+        return graph;
     }
 }

@@ -7,6 +7,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 public class AdjacencyListGraph implements Graph {
     private final List<List<DWEdge>> list;
     private int maxObserved;
@@ -21,17 +23,22 @@ public class AdjacencyListGraph implements Graph {
         int fringe = Math.max(src, dest);
         maxObserved = Math.max(maxObserved, fringe);
 
-        while(src >= list.size()) {
+        while(fringe >= list.size()) {
             list.add(null);
         }
         if(list.get(src) == null) {
             list.set(src, new ArrayList<>());
+        }
+        if(list.get(dest) == null) {
+            list.set(dest, new ArrayList<>());
         }
         list.get(src).add(Edges.to(dest, value));
     }
 
     @Override
     public void deleteEdge(int src, int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         if(src < list.size()) {
             list.get(src).removeIf(e -> e.getDest() == dest);
         }
@@ -39,8 +46,9 @@ public class AdjacencyListGraph implements Graph {
 
     @Override
     public void deleteVertex(final int vert) {
+        checkArgument(containsVertex(vert), "No source vertex: " + vert);
         if(vert < list.size()) {
-            for(final DWEdge edge : getAdjacent(vert)) {
+            for(final DWEdge edge : getAdjacentEdges(vert)) {
                 deleteUndirectedEdge(vert, edge.getDest());
             }
             list.set(vert, null);
@@ -49,7 +57,9 @@ public class AdjacencyListGraph implements Graph {
 
     @Override
     public Optional<Integer> getWeight(final int src, final int dest) {
-        if(src >= list.size()) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
+        if(src >= list.size() || list.get(src) == null) {
             return Optional.empty();
         }
 
@@ -63,17 +73,25 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public boolean contains(final int src, final int dest) {
+    public boolean containsVertex(final int vert) {
+        return vert < list.size() && list.get(vert) != null;
+    }
+
+    @Override
+    public boolean containsEdge(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         return getWeight(src, dest).isPresent();
     }
 
     @Override
-    public Collection<DWEdge> getAdjacent(final int vertex) {
-        if(vertex >= list.size() || list.get(vertex) == null) {
+    public Collection<DWEdge> getAdjacentEdges(final int src) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        if(src >= list.size() || list.get(src) == null) {
             return ImmutableSet.of();
         }
 
-        return ImmutableSet.copyOf(list.get(vertex));
+        return ImmutableSet.copyOf(list.get(src));
     }
 
     @Override

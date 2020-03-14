@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f99fac9-069d-4351-b543-586309f9b54f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_library_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphKCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphMotherVertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphReachable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GFG-Graphs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GFG-Graphs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/DWEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/DWEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graphs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graphs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/SDWEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/SDWEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyHashGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyHashGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyMatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/AdjacencyMatrixGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphKCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphKCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG9.java" afterDir="false" />
@@ -25,6 +21,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="564" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,42 +80,14 @@
       <command value="GFG2" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GFG2">
-    <configuration name="GFG2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG2" />
-      <module name="GFG-Graphs" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GFG9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG9" />
-      <module name="GFG-Graphs" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GFG1.testSimpleGraph (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicGraphTests.testResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GFG-Graphs" />
       <extension name="coverage">
         <pattern>
@@ -125,15 +96,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG1" />
-      <option name="METHOD_NAME" value="testSimpleGraph(com.toastedbits.gfg.graphs.common.Graph)" />
+      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.BasicGraphTests" />
+      <option name="METHOD_NAME" value="testResize" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GFG1.testSimpleGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GFG7.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GFG-Graphs" />
       <extension name="coverage">
         <pattern>
@@ -142,15 +113,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG1" />
-      <option name="METHOD_NAME" value="testSimpleGraph" />
+      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG7" />
+      <option name="METHOD_NAME" value="test(com.toastedbits.gfg.graphs.common.Graph)" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GFG2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GFG8.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GFG-Graphs" />
       <extension name="coverage">
         <pattern>
@@ -159,8 +130,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG2" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG8" />
+      <option name="METHOD_NAME" value="test(com.toastedbits.gfg.graphs.common.Graph)" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GFG9.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GFG-Graphs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
+      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG9" />
+      <option name="METHOD_NAME" value="test(com.toastedbits.gfg.graphs.common.Graph)" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,6 +157,21 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.toastedbits.gfg.graphs in GFG-Graphs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GFG-Graphs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,19 +187,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GFG9" />
-      <item itemvalue="JUnit.GFG1.testSimpleGraph" />
-      <item itemvalue="JUnit.GFG1.testSimpleGraph (1)" />
-      <item itemvalue="Application.GFG2" />
-      <item itemvalue="JUnit.GFG2" />
+      <item itemvalue="JUnit.GFG7.test" />
+      <item itemvalue="JUnit.GFG8.test" />
+      <item itemvalue="JUnit.GFG9.test" />
+      <item itemvalue="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs" />
+      <item itemvalue="JUnit.BasicGraphTests.testResize" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GFG2" />
-        <item itemvalue="Application.GFG2" />
-        <item itemvalue="JUnit.GFG1.testSimpleGraph (1)" />
-        <item itemvalue="JUnit.GFG1.testSimpleGraph" />
-        <item itemvalue="Application.GFG9" />
+        <item itemvalue="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs" />
+        <item itemvalue="JUnit.BasicGraphTests.testResize" />
+        <item itemvalue="JUnit.GFG9.test" />
+        <item itemvalue="JUnit.GFG8.test" />
+        <item itemvalue="JUnit.GFG7.test" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584141889744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add JUnit Tests">
+      <created>1584146065557</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584146065557</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -253,7 +264,8 @@
     <MESSAGE value="Add Mother Vertex Detection" />
     <MESSAGE value="Add Transitive Closure" />
     <MESSAGE value="Add KCores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add KCores" />
+    <MESSAGE value="Add JUnit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JUnit Tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="361" width="1167" height="677" key="#Project_Structure" timestamp="1584142839517">
@@ -296,10 +308,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="600" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583881583334" />
-    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584141888717">
+    <state x="1035" y="409" key="#xdebugger.evaluate" timestamp="1584206502525">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141888717" />
+    <state x="1035" y="409" key="#xdebugger.evaluate/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206502525" />
+    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584146064438">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584146064438" />
     <state width="404" height="466" key="DebuggerActiveHint" timestamp="1583774316160">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -308,38 +324,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541971732" />
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584146040935">
+    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584209716745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584146040935" />
-    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584146040934">
+    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584209716745" />
+    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584209716745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584146040934" />
-    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584146040934">
+    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584209716745" />
+    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584209716745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584146040934" />
-    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584146040934">
+    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584209716745" />
+    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584209716745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584146040934" />
-    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584141110165">
+    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584209716745" />
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584206850970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141110165" />
-    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1584141110165">
+    <state width="2517" height="482" key="GridCell.Tab.1.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206850970" />
+    <state width="2517" height="482" key="GridCell.Tab.1.center" timestamp="1584206850970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141110165" />
-    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1584141110165">
+    <state width="2517" height="482" key="GridCell.Tab.1.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206850970" />
+    <state width="2517" height="482" key="GridCell.Tab.1.left" timestamp="1584206850970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141110165" />
-    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1584141110165">
+    <state width="2517" height="482" key="GridCell.Tab.1.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206850970" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right" timestamp="1584206850970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="482" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141110165" />
+    <state width="2517" height="482" key="GridCell.Tab.1.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206850970" />
     <state x="999" y="410" width="562" height="572" key="RefactorJ.ExtractClass" timestamp="1583881925605">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -371,6 +387,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GFG_Graphs$GFG1.ic" NAME="GFG1 Coverage Results" MODIFIED="1583541645208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GFG_Graphs$AdjacencyMatrixTests_testResize.ic" NAME="AdjacencyMatrixTests.testResize Coverage Results" MODIFIED="1584208734921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GFG_Graphs$com_toastedbits_gfg_graphs_in_GFG_Graphs.ic" NAME="com.toastedbits.gfg.graphs in GFG-Graphs Coverage Results" MODIFIED="1584209716704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.toastedbits.gfg.graphs.*</FILTER>
     </SUITE>
   </component>

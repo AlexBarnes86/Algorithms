@@ -18,7 +18,7 @@ public class GraphKCore {
             updatesMade = false;
             for(Iterator<Integer> itr = nodes.iterator(); itr.hasNext();) {
                 int node = itr.next();
-                if(graph.getAdjacent(node).size() < k) {
+                if(graph.getAdjacentEdges(node).size() < k) {
                     log.debug("Deleting node: {}", node);
                     itr.remove();
                     graph.deleteVertex(node);

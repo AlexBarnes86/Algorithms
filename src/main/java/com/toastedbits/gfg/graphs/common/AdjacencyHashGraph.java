@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 class AdjacencyHashGraph implements Graph {
     private int maxObserved;
     private final Map<Integer, Map<Integer, Integer>> graph;
@@ -24,10 +26,13 @@ class AdjacencyHashGraph implements Graph {
 
         final Map<Integer, Integer> edges = graph.computeIfAbsent(src, HashMap::new);
         edges.put(dest, value);
+        graph.computeIfAbsent(dest, HashMap::new);
     }
 
     @Override
     public void deleteEdge(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         if (graph.containsKey(src)) {
             graph.get(src).remove(dest);
         }
@@ -35,8 +40,9 @@ class AdjacencyHashGraph implements Graph {
 
     @Override
     public void deleteVertex(final int vert) {
+        checkArgument(containsVertex(vert), "No source vertex: " + vert);
         if(graph.containsKey(vert)) {
-            for(final DWEdge edge : getAdjacent(vert)) {
+            for(final DWEdge edge : getAdjacentEdges(vert)) {
                 deleteUndirectedEdge(vert, edge.getDest());
             }
             graph.remove(vert);
@@ -45,6 +51,8 @@ class AdjacencyHashGraph implements Graph {
 
     @Override
     public Optional<Integer> getWeight(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         final Map<Integer, Integer> edges = graph.get(src);
         if(edges != null) {
             return Optional.ofNullable(edges.get(dest));
@@ -53,14 +61,25 @@ class AdjacencyHashGraph implements Graph {
     }
 
     @Override
-    public boolean contains(final int src, final int dest) {
+    public boolean containsVertex(final int vert) {
+        return graph.containsKey(vert);
+    }
+
+    @Override
+    public boolean containsEdge(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         final Map<Integer, Integer> edges = graph.get(src);
         return edges != null && edges.containsKey(dest);
     }
 
     @Override
-    public Collection<DWEdge> getAdjacent(final int vert) {
-        final Map<Integer, Integer> edges = graph.get(vert);
+    public Collection<DWEdge> getAdjacentEdges(final int src) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        if(!containsVertex(src)) {
+            throw new IllegalArgumentException("No source vertex: " + src);
+        }
+        final Map<Integer, Integer> edges = graph.get(src);
         final List<DWEdge> adj = new ArrayList<>();
         if(edges != null) {
             for (Map.Entry<Integer, Integer> edge : edges.entrySet()) {

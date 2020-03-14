@@ -19,7 +19,7 @@ public class GraphTransitiveClosure {
             while(!stack.isEmpty()) {
                 SDWEdge sd = stack.pop();
                 reachable[sd.getSrc()][sd.getDest()] = true;
-                for (final DWEdge adj : graph.getAdjacent(sd.getDest())) {
+                for (final DWEdge adj : graph.getAdjacentEdges(sd.getDest())) {
                     if (!reachable[sd.getSrc()][adj.getDest()]) {
                         stack.push(Edges.between(sd.getSrc(), adj.getDest()));
                     }

@@ -3,6 +3,8 @@ package com.toastedbits.gfg.graphs.common;
 import java.util.Collection;
 import java.util.Optional;
 
+import static java.util.stream.Collectors.toList;
+
 public interface Graph {
     void addEdge(int src, int dest, int value);
     default void addUndirectedEdge(int a, int b, int value) {
@@ -22,8 +24,12 @@ public interface Graph {
     void deleteVertex(int vert);
 
     Optional<Integer> getWeight(final int src, final int dest);
-    boolean contains(final int src, final int dest);
-    Collection<DWEdge> getAdjacent(final int start);
+    boolean containsVertex(final int vert);
+    boolean containsEdge(final int src, final int dest);
+    Collection<DWEdge> getAdjacentEdges(final int src);
+    default Collection<Integer> getAdjacentVertecies(final int src) {
+        return getAdjacentEdges(src).stream().map(DWEdge::getDest).collect(toList());
+    }
 
     int getMaxObserved();
     default int getSize() {

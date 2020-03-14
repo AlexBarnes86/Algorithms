@@ -17,7 +17,7 @@ public class GraphDFS {
             if(!visited.contains(vertex)) {
                 visitor.accept(vertex);
                 visited.add(vertex);
-                graph.getAdjacent(vertex).stream().map(DWEdge::getDest).forEach(stack::push);
+                graph.getAdjacentEdges(vertex).stream().map(DWEdge::getDest).forEach(stack::push);
             }
         }
     }

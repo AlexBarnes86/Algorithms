@@ -18,7 +18,7 @@ public class GraphBFS {
             if(!visited.contains(vertex)) {
                 visitor.accept(vertex);
                 visited.add(vertex);
-                queue.addAll(graph.getAdjacent(vertex).stream().map(DWEdge::getDest).collect(Collectors.toList()));
+                queue.addAll(graph.getAdjacentEdges(vertex).stream().map(DWEdge::getDest).collect(Collectors.toList()));
             }
         }
     }

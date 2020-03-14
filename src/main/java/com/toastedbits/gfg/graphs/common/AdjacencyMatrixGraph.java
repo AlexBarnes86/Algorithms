@@ -6,6 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Collection;
 import java.util.Optional;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 @Slf4j
 public class AdjacencyMatrixGraph implements Graph {
     private int size;
@@ -45,6 +47,8 @@ public class AdjacencyMatrixGraph implements Graph {
 
     @Override
     public void deleteEdge(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         if(src < matrix.length && dest < matrix.length) {
             matrix[src][dest] = 0;
         }
@@ -52,8 +56,9 @@ public class AdjacencyMatrixGraph implements Graph {
 
     @Override
     public void deleteVertex(final int vert) {
+        checkArgument(containsVertex(vert), "No source vertex: " + vert);
         if(vert < matrix.length) {
-            for(final DWEdge edge : getAdjacent(vert)) {
+            for(final DWEdge edge : getAdjacentEdges(vert)) {
                 deleteUndirectedEdge(vert, edge.getDest());
             }
             matrix[vert][vert] = 0;
@@ -62,6 +67,9 @@ public class AdjacencyMatrixGraph implements Graph {
 
     @Override
     public Optional<Integer> getWeight(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
+
         if(src >= size || dest >= size) {
             return Optional.empty();
         }
@@ -74,22 +82,30 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public boolean contains(final int src, final int dest) {
+    public boolean containsVertex(final int vert) {
+        return vert < matrix.length;
+    }
+
+    @Override
+    public boolean containsEdge(final int src, final int dest) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
+        checkArgument(containsVertex(dest), "No destination vertex: " + dest);
         return getWeight(src, dest).isPresent();
     }
 
     @Override
-    public Collection<DWEdge> getAdjacent(final int vertex) {
+    public Collection<DWEdge> getAdjacentEdges(final int src) {
+        checkArgument(containsVertex(src), "No source vertex: " + src);
         final ImmutableSet.Builder<DWEdge> builder = ImmutableSet.builder();
 
-        if(vertex >= this.size) {
+        if(src >= this.size) {
             return builder.build();
         }
 
         for(int i = 0; i < this.size; ++i) {
-            if(matrix[vertex][i] != 0) {
+            if(matrix[src][i] != 0) {
                 //log.debug("visit edge {} -> {}", vertex, i);
-                builder.add(Edges.to(i, matrix[vertex][i]));
+                builder.add(Edges.to(i, matrix[src][i]));
             }
         }
 
