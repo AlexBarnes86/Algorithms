@@ -3,7 +3,7 @@ package com.toastedbits.algs.gfg.graphs;
 import com.google.common.collect.ImmutableList;
 import com.toastedbits.algs.gfg.graphs.common.Graph;
 import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphBFS;
+import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphPaths;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,12 +15,15 @@ import java.util.stream.Stream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItems;
 
+//Count all possible paths between two vertices
+//https://www.geeksforgeeks.org/count-possible-paths-two-vertices/
+
 @Slf4j
 public class GFG11 {
     @ParameterizedTest
     @MethodSource("createGraphs")
     public void testFindPaths(@NonNull final Graph graph) {
-        final List<List<Integer>> paths = GraphBFS.findPaths(graph, 0, 4);
+        final List<List<Integer>> paths = GraphPaths.findAllPaths(graph, 0, 4);
         log.debug("Graph {}\n{}", graph.getClass(), graph);
         paths.forEach(path -> log.debug("Found path {}", path));
         assertThat(paths, hasItems(

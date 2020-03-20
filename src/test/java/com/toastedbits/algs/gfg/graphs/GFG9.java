@@ -15,6 +15,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+//Find K cores of an undirected Graph
+//https://www.geeksforgeeks.org/find-k-cores-graph/
+
 @Slf4j
 public class GFG9 {
     @ParameterizedTest

@@ -3,6 +3,7 @@ package com.toastedbits.algs.gfg.graphs;
 import com.toastedbits.algs.gfg.graphs.common.Graph;
 import com.toastedbits.algs.gfg.graphs.common.Graphs;
 import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphBFS;
+import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphLevelCount;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,35 +18,22 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
 
+//Count the number of nodes at given level in a tree using BFS
+//https://www.geeksforgeeks.org/count-number-nodes-given-level-using-bfs/
+
 @Slf4j
 public class GFG10 {
     @ParameterizedTest
     @MethodSource("createGraphs")
     public void testLevelCounting(@NonNull final Graph graph) {
-        final Map<Integer, Integer> levels = GraphBFS.findLevels(graph);
+        GraphLevelCount.Results results = GraphLevelCount.solve(graph);
 
-        int maxLevel = Integer.MIN_VALUE;
-        final List<Integer> maxVerts = new ArrayList<>();
+        log.debug("Levels: {}", results.getLevels());
+        log.debug("Max Verts: {}", results.getMaxVerts());
+        log.debug("Max Level: {}", results.getMaxLevel());
 
-        for(Map.Entry<Integer, Integer> nodeLevel : levels.entrySet()) {
-            int node = nodeLevel.getKey();
-            int level = nodeLevel.getValue();
-            if(maxLevel < level) {
-                maxVerts.clear();
-                maxLevel = level;
-                maxVerts.add(node);
-            }
-            else if(level == maxLevel) {
-                maxVerts.add(node);
-            }
-        }
-
-        log.debug("Levels: {}", levels);
-        log.debug("Max Verts: {}", maxVerts);
-        log.debug("Max Level: {}", maxLevel);
-
-        assertThat(maxLevel, equalTo(2));
-        assertThat(maxVerts, hasItems(3, 4, 5, 6));
+        assertThat(results.getMaxLevel(), equalTo(2));
+        assertThat(results.getMaxVerts(), hasItems(3, 4, 5, 6));
     }
 
     private static Stream<Graph> createGraphs() {

@@ -11,6 +11,9 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 
+//Dijkstra’s shortest path algorithm
+//https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
+
 @Slf4j
 public class GFG94 {
     @ParameterizedTest

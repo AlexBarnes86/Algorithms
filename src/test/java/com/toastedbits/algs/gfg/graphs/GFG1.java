@@ -16,7 +16,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItems;
 
 //Graph and its representations
-//https://docs.google.com/spreadsheets/d/1SiMEXThiH5K350REwnFFA2Y3X4IXi7DSbSTXZVDgdoU/edit#gid=1471830786&range=D51
+//https://www.geeksforgeeks.org/graph-and-its-representations/
+
+//Graph representations using set and hash
+//https://www.geeksforgeeks.org/graph-representations-using-set-hash/
 
 @Slf4j
 public class GFG1 {

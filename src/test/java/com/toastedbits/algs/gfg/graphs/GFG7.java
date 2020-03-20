@@ -15,8 +15,21 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+//Find Mother Vertex in a Graph
+//https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/
+
 @Slf4j
 public class GFG7 {
+    @ParameterizedTest
+    @MethodSource("createGraphs")
+    public void test(@NonNull final Graph graph) {
+        log.info("Graph {}\n{}", graph.getClass(), graph);
+        Optional<Integer> mother = GraphMotherVertex.findMotherVertex(graph);
+        log.info("Mother vertex is {}", mother);
+        assertTrue(mother.isPresent());
+        assertThat(mother.get(), equalTo(5));
+    }
+
     private static Stream<Graph> createGraphs() {
         return Stream.of(
             addData(Graphs.adjacencyListGraph()),
@@ -36,15 +49,5 @@ public class GFG7 {
         graph.addEdge(6, 0, 1);
 
         return graph;
-    }
-
-    @ParameterizedTest
-    @MethodSource("createGraphs")
-    public void test(@NonNull final Graph graph) {
-        log.info("Graph {}\n{}", graph.getClass(), graph);
-        Optional<Integer> mother = GraphMotherVertex.findMotherVertex(graph);
-        log.info("Mother vertex is {}", mother);
-        assertTrue(mother.isPresent());
-        assertThat(mother.get(), equalTo(5));
     }
 }

@@ -16,6 +16,12 @@ import java.util.stream.Stream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+//Breadth First Traversal for a Graph
+//https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/
+
+//Applications of Breadth First Traversal
+//https://www.geeksforgeeks.org/applications-of-breadth-first-traversal/
+
 @Slf4j
 public class GFG2 {
     @ParameterizedTest

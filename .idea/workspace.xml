@@ -2,35 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f99fac9-069d-4351-b543-586309f9b54f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphLevelCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphPaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyHashGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyHashGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyListGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyMatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyMatrixGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/DWEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/DWEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Edges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Edges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graphs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graphs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/SDWEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/SDWEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphBFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphDFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphKCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphKCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphMotherVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphMotherVertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphReachable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphReachable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphShortestPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphShortestPaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTopologicalSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTopologicalSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/BasicGraphTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/EdgeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/EdgeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG67.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG67.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG94.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG67.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG67.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG94.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.toastedbits.algs.gfg.graphs.common.algorithms.GraphPaths" />
       <recent name="GraphBFS" />
       <recent name="com.toastedbits.gfg.graphs.common.Edges" />
     </key>
@@ -97,9 +83,18 @@
       <command value="GFG2" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FactorizationTest.factorizationTest (1)">
+  <component name="RunManager" selected="JUnit.All in Algorithms">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Algorithms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,23 +166,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SieveTest.testSieve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.toastedbits.extra.math" />
-      <option name="MAIN_CLASS_NAME" value="math.SieveTest" />
-      <option name="METHOD_NAME" value="testSieve" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -208,16 +186,16 @@
       <item itemvalue="JUnit.FactorizationTest" />
       <item itemvalue="JUnit.FactorizationTest.factorizationTest" />
       <item itemvalue="JUnit.SieveTest.testLarge" />
-      <item itemvalue="JUnit.SieveTest.testSieve" />
       <item itemvalue="JUnit.FactorizationTest.factorizationTest (1)" />
+      <item itemvalue="JUnit.All in Algorithms" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Algorithms" />
         <item itemvalue="JUnit.FactorizationTest.factorizationTest (1)" />
         <item itemvalue="JUnit.FactorizationTest" />
         <item itemvalue="JUnit.FactorizationTest.factorizationTest" />
         <item itemvalue="JUnit.SieveTest.testLarge" />
-        <item itemvalue="JUnit.SieveTest.testSieve" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584669120713</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rename project/package to Algorithms">
+      <created>1584669709453</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584669709453</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -341,10 +326,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1085" y="409" key="#com.intellij.ide.util.MemberChooser/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584139119475" />
-    <state x="1009" y="480" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1583881939796">
+    <state x="1009" y="480" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584670281486">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1009" y="480" key="#com.intellij.ide.util.TreeClassChooserDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583881939796" />
+    <state x="1009" y="480" key="#com.intellij.ide.util.TreeClassChooserDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670281486" />
     <state x="1007" y="392" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1583541758336">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -365,10 +350,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1081" y="569" width="407" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669574864" />
-    <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1584145778474">
+    <state x="1093" y="538" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1584670256238">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584145778474" />
+    <state x="1093" y="538" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670256238" />
+    <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1584670289831">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670289831" />
     <state x="600" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584540178386">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -377,10 +366,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1035" y="409" key="#xdebugger.evaluate/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206502525" />
-    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584669119336">
+    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584669708179">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669119336" />
+    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669708179" />
     <state width="404" height="466" key="DebuggerActiveHint" timestamp="1584213974814">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -389,22 +378,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584668530401" />
-    <state width="2500" height="392" key="GridCell.Tab.0.bottom" timestamp="1584669027103">
+    <state width="2500" height="392" key="GridCell.Tab.0.bottom" timestamp="1584670660839">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2500" height="392" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
-    <state width="2500" height="392" key="GridCell.Tab.0.center" timestamp="1584669027103">
+    <state width="2500" height="392" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670660839" />
+    <state width="2500" height="392" key="GridCell.Tab.0.center" timestamp="1584670660839">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2500" height="392" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
-    <state width="2500" height="392" key="GridCell.Tab.0.left" timestamp="1584669027103">
+    <state width="2500" height="392" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670660839" />
+    <state width="2500" height="392" key="GridCell.Tab.0.left" timestamp="1584670660839">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2500" height="392" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
-    <state width="2500" height="392" key="GridCell.Tab.0.right" timestamp="1584669027103">
+    <state width="2500" height="392" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670660839" />
+    <state width="2500" height="392" key="GridCell.Tab.0.right" timestamp="1584670660839">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2500" height="392" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
+    <state width="2500" height="392" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584670660839" />
     <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584218201855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
