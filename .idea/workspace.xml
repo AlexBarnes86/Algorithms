@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f99fac9-069d-4351-b543-586309f9b54f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits/gfg/graphs/common/algorithms/GraphTopologicalSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG12.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyHashGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyHashGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyListGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyListGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyMatrixGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/AdjacencyMatrixGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/DWEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/DWEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Edges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Edges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graphs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/Graphs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/SDWEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/SDWEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphBFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphKCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphKCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphMotherVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphMotherVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphReachable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphReachable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphShortestPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphShortestPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTopologicalSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTopologicalSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/toastedbits.algs/gfg/graphs/common/algorithms/GraphTransitiveClosure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/BasicGraphTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/BasicGraphTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/EdgeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/EdgeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG67.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG67.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG94.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +52,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/toastedbits/gfg/graphs/GFG2.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/toastedbits/algs/gfg/graphs/GFG2.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="aDHZkzfS" />
@@ -58,6 +84,8 @@
       <recent name="com.toastedbits.gfg.graphs.common.Edges" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.toastedbits.algs.gfg.graphs" />
+      <recent name="com.toastedbits.algs.extra.math" />
       <recent name="com.toastedbits.gfg.graphs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -69,73 +97,92 @@
       <command value="GFG2" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GFG12">
+  <component name="RunManager" selected="JUnit.FactorizationTest.factorizationTest (1)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicGraphTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GFG-Graphs" />
+    <configuration name="FactorizationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.BasicGraphTests" />
+      <option name="PACKAGE_NAME" value="com.toastedbits.extra.math" />
+      <option name="MAIN_CLASS_NAME" value="math.FactorizationTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GFG10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GFG-Graphs" />
+    <configuration name="FactorizationTest.factorizationTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
+          <option name="PATTERN" value="com.toastedbits.algs.extra.math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG10" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GFG11.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GFG-Graphs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG11" />
-      <option name="METHOD_NAME" value="test(com.toastedbits.gfg.graphs.common.Graph)" />
+      <option name="PACKAGE_NAME" value="com.toastedbits.algs.extra.math" />
+      <option name="MAIN_CLASS_NAME" value="com.toastedbits.algs.extra.math.FactorizationTest" />
+      <option name="METHOD_NAME" value="factorizationTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GFG12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GFG-Graphs" />
+    <configuration name="FactorizationTest.factorizationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="MAIN_CLASS_NAME" value="com.toastedbits.gfg.graphs.GFG12" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.toastedbits.extra.math" />
+      <option name="MAIN_CLASS_NAME" value="math.FactorizationTest" />
+      <option name="METHOD_NAME" value="factorizationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SieveTest.testLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.toastedbits.extra.math" />
+      <option name="MAIN_CLASS_NAME" value="math.SieveTest" />
+      <option name="METHOD_NAME" value="testLarge" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SieveTest.testSieve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.toastedbits.extra.math" />
+      <option name="MAIN_CLASS_NAME" value="math.SieveTest" />
+      <option name="METHOD_NAME" value="testSieve" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,21 +190,6 @@
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.toastedbits.gfg.graphs in GFG-Graphs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GFG-Graphs" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.toastedbits.gfg.graphs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.toastedbits.gfg.graphs" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,19 +205,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs" />
-      <item itemvalue="JUnit.BasicGraphTests" />
-      <item itemvalue="JUnit.GFG10" />
-      <item itemvalue="JUnit.GFG11.test" />
-      <item itemvalue="JUnit.GFG12" />
+      <item itemvalue="JUnit.FactorizationTest" />
+      <item itemvalue="JUnit.FactorizationTest.factorizationTest" />
+      <item itemvalue="JUnit.SieveTest.testLarge" />
+      <item itemvalue="JUnit.SieveTest.testSieve" />
+      <item itemvalue="JUnit.FactorizationTest.factorizationTest (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GFG12" />
-        <item itemvalue="JUnit.com.toastedbits.gfg.graphs in GFG-Graphs" />
-        <item itemvalue="JUnit.GFG11.test" />
-        <item itemvalue="JUnit.GFG10" />
-        <item itemvalue="JUnit.BasicGraphTests" />
+        <item itemvalue="JUnit.FactorizationTest.factorizationTest (1)" />
+        <item itemvalue="JUnit.FactorizationTest" />
+        <item itemvalue="JUnit.FactorizationTest.factorizationTest" />
+        <item itemvalue="JUnit.SieveTest.testLarge" />
+        <item itemvalue="JUnit.SieveTest.testSieve" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584219558157</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add Topological Sorting">
+      <created>1584403990672</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584403990672</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Rename project/package to Algorithms">
+      <created>1584669120713</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584669120713</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -274,9 +320,15 @@
     <MESSAGE value="Add JUnit Tests" />
     <MESSAGE value="Add All Paths Finding&#10;&#10;Improve Coverage (Remove dead code)" />
     <MESSAGE value="Improve Coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve Coverage" />
+    <MESSAGE value="Add Topological Sorting" />
+    <MESSAGE value="Rename project/package to Algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename project/package to Algorithms" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="872" y="361" key="#Plugins" timestamp="1584410521701">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="361" key="#Plugins/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584410521701" />
     <state x="872" y="361" width="1167" height="677" key="#Project_Structure" timestamp="1584142839517">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -305,50 +357,54 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="860" y="358" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583465470779" />
-    <state x="1081" y="569" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584141831043">
+    <state x="960" y="439" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584508638826">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1081" y="569" width="398" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141831043" />
+    <state x="960" y="439" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584508638826" />
+    <state x="1081" y="569" width="407" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1584669574864">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1081" y="569" width="407" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669574864" />
     <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1584145778474">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="999" y="406" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584145778474" />
-    <state x="600" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583881583334">
+    <state x="600" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584540178386">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="600" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583881583334" />
+    <state x="600" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584540178386" />
     <state x="1035" y="409" key="#xdebugger.evaluate" timestamp="1584206502525">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1035" y="409" key="#xdebugger.evaluate/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584206502525" />
-    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584219557347">
+    <state x="884" y="298" key="CommitChangelistDialog2" timestamp="1584669119336">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584219557347" />
+    <state x="884" y="298" key="CommitChangelistDialog2/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669119336" />
     <state width="404" height="466" key="DebuggerActiveHint" timestamp="1584213974814">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="404" height="466" key="DebuggerActiveHint/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584213974814" />
-    <state x="1060" y="458" key="FileChooserDialogImpl" timestamp="1583541971732">
+    <state x="1060" y="458" key="FileChooserDialogImpl" timestamp="1584668530401">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583541971732" />
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom" timestamp="1584403808020">
+    <state x="1060" y="458" key="FileChooserDialogImpl/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584668530401" />
+    <state width="2500" height="392" key="GridCell.Tab.0.bottom" timestamp="1584669027103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584403808020" />
-    <state width="2517" height="387" key="GridCell.Tab.0.center" timestamp="1584403808020">
+    <state width="2500" height="392" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
+    <state width="2500" height="392" key="GridCell.Tab.0.center" timestamp="1584669027103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584403808020" />
-    <state width="2517" height="387" key="GridCell.Tab.0.left" timestamp="1584403808020">
+    <state width="2500" height="392" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
+    <state width="2500" height="392" key="GridCell.Tab.0.left" timestamp="1584669027103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584403808020" />
-    <state width="2517" height="387" key="GridCell.Tab.0.right" timestamp="1584403808020">
+    <state width="2500" height="392" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
+    <state width="2500" height="392" key="GridCell.Tab.0.right" timestamp="1584669027103">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="387" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584403808020" />
+    <state width="2500" height="392" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669027103" />
     <state width="2517" height="482" key="GridCell.Tab.1.bottom" timestamp="1584218201855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -377,10 +433,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1096" y="481" key="chooseDestDirectoryDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584145776421" />
-    <state x="988" y="527" key="com.intellij.ide.util.TipDialog" timestamp="1584402007905">
+    <state x="988" y="527" key="com.intellij.ide.util.TipDialog" timestamp="1584668096680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="988" y="527" key="com.intellij.ide.util.TipDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584402007905" />
+    <state x="988" y="527" key="com.intellij.ide.util.TipDialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584668096680" />
     <state x="984" y="601" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584142834644">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -389,14 +445,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="934" y="318" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584212161220" />
-    <state x="987" y="334" width="586" height="732" key="find.popup" timestamp="1584141072517">
+    <state x="987" y="334" width="586" height="732" key="find.popup" timestamp="1584668652509">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="334" width="586" height="732" key="find.popup/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584141072517" />
-    <state x="936" y="330" width="672" height="677" key="run.anything.popup" timestamp="1583542083850">
+    <state x="987" y="334" width="586" height="732" key="find.popup/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584668652509" />
+    <state x="662" y="427" key="new project wizard" timestamp="1584668540298">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="936" y="330" width="672" height="677" key="run.anything.popup/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1583542083850" />
+    <state x="662" y="427" key="new project wizard/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584668540298" />
+    <state x="936" y="330" width="672" height="677" key="run.anything.popup" timestamp="1584669434006">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="330" width="672" height="677" key="run.anything.popup/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584669434006" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1584410508687">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1584410508687" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GFG_Graphs$GFG1.ic" NAME="GFG1 Coverage Results" MODIFIED="1583541645208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
