@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkArgument;
+import static java.util.stream.Collectors.toList;
 
 class AdjacencyHashGraph implements Graph {
     private int maxObserved;

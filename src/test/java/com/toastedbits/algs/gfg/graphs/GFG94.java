@@ -2,7 +2,7 @@ package com.toastedbits.algs.gfg.graphs;
 
 import com.toastedbits.algs.gfg.graphs.common.Graph;
 import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphShortestPaths;
+import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphDijstrasShortestPaths;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -20,7 +20,7 @@ public class GFG94 {
     @MethodSource("createGraphs")
     public void test(@NonNull final Graph graph) {
         log.debug("Graph {}:\n{}", graph.getClass(), graph);
-        List<Integer> shortestPaths = GraphShortestPaths.pathCost(graph, 0);
+        List<Integer> shortestPaths = GraphDijstrasShortestPaths.pathCost(graph, 0);
         log.debug("Shortest Paths: {}", shortestPaths);
     }
 

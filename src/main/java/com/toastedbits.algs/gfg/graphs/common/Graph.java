@@ -1,6 +1,8 @@
 package com.toastedbits.algs.gfg.graphs.common;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 
 import static java.util.stream.Collectors.toList;
@@ -33,6 +35,17 @@ public interface Graph {
     Collection<DWEdge> getAdjacentEdges(final int src);
     default Collection<Integer> getAdjacentVertecies(final int src) {
         return getAdjacentEdges(src).stream().map(DWEdge::getDest).collect(toList());
+    }
+
+    default List<SDWEdge> getAllEdges() {
+        List<SDWEdge> edges = new ArrayList<>();
+        for(int i = 0; i < getSize(); ++i) {
+            if(containsVertex(i)) {
+                final int source = i;
+                edges.addAll(getAdjacentEdges(i).stream().map(dwEdge -> dwEdge.withSource(source)).collect(toList()));
+            }
+        }
+        return edges;
     }
 
     int getMaxObserved();

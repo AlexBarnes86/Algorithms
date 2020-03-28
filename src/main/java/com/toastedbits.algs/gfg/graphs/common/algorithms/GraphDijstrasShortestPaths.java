@@ -8,7 +8,7 @@ import java.util.List;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-public class GraphShortestPaths {
+public class GraphDijstrasShortestPaths {
     private static int minDistanceIndex(final List<Integer> dist, List<Boolean> sptSet) {
         int min = Integer.MAX_VALUE, minIdx = -1;
         for(int v = 0; v < dist.size(); ++v) {
