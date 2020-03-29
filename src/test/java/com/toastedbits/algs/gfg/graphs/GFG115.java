@@ -38,12 +38,12 @@ public class GFG115 {
     }
 
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(1, 2);
-        graph.addEdge(2, 0);
-        graph.addEdge(2, 3);
-        graph.addEdge(3, 3);
+        graph.setEdge(0, 1);
+        graph.setEdge(0, 2);
+        graph.setEdge(1, 2);
+        graph.setEdge(2, 0);
+        graph.setEdge(2, 3);
+        graph.setEdge(3, 3);
 
         return graph;
     }

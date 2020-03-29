@@ -44,13 +44,13 @@ public class GFG11 {
 
     private static Graph addData(@NonNull final Graph graph) {
         //A = 0, B = 1, C = 2, D = 3, E = 4
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(0, 4);
-        graph.addEdge(1, 3);
-        graph.addEdge(1, 4);
-        graph.addEdge(2, 4);
-        graph.addEdge(3, 2);
+        graph.setEdge(0, 1);
+        graph.setEdge(0, 2);
+        graph.setEdge(0, 4);
+        graph.setEdge(1, 3);
+        graph.setEdge(1, 4);
+        graph.setEdge(2, 4);
+        graph.setEdge(3, 2);
 
         return graph;
     }

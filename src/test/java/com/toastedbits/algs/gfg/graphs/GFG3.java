@@ -2,7 +2,6 @@ package com.toastedbits.algs.gfg.graphs;
 
 import com.toastedbits.algs.gfg.graphs.common.Graph;
 import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphBFS;
 import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphDFS;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
@@ -54,15 +53,15 @@ public class GFG3 {
     +---->5<----+
 */
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addEdge(0, 1, 1);
-        graph.addEdge(0, 2, 1);
-        graph.addEdge(1, 3, 1);
-        graph.addEdge(1, 4, 1);
-        graph.addEdge(2, 4, 1);
-        graph.addEdge(3, 4, 1);
-        graph.addEdge(3, 5, 1);
-        graph.addEdge(4, 5, 1);
-        graph.addEdge(6, 6, 1);
+        graph.setEdge(0, 1, 1);
+        graph.setEdge(0, 2, 1);
+        graph.setEdge(1, 3, 1);
+        graph.setEdge(1, 4, 1);
+        graph.setEdge(2, 4, 1);
+        graph.setEdge(3, 4, 1);
+        graph.setEdge(3, 5, 1);
+        graph.setEdge(4, 5, 1);
+        graph.setEdge(6, 6, 1);
 
         return graph;
     }

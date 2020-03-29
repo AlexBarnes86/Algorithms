@@ -7,7 +7,6 @@ import com.toastedbits.algs.gfg.graphs.common.Graphs;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.hamcrest.CoreMatchers;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -35,7 +34,7 @@ public class BasicGraphTests {
     public void testDiagonal(@NonNull final Graph graph) {
         //Choose a large number to force a resize
         for(int i = 0; i < 100; ++i) {
-            graph.addEdge(i, i, 1);
+            graph.setEdge(i, i, 1);
             assertTrue(graph.containsEdge(i, i));
             assertThat(graph.getAdjacentVertecies(i), CoreMatchers.hasItem(i));
             assertThat(graph.getWeight(i, i), equalTo(Optional.of(1)));

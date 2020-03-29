@@ -50,22 +50,22 @@ public class GFG9 {
     }
 
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addUndirectedEdge(0, 1);
-        graph.addUndirectedEdge(0, 2);
-        graph.addUndirectedEdge(1, 2);
-        graph.addUndirectedEdge(1, 5);
-        graph.addUndirectedEdge(2, 3);
-        graph.addUndirectedEdge(2, 4);
-        graph.addUndirectedEdge(2, 5);
-        graph.addUndirectedEdge(2, 6);
-        graph.addUndirectedEdge(3, 4);
-        graph.addUndirectedEdge(3, 6);
-        graph.addUndirectedEdge(3, 7);
-        graph.addUndirectedEdge(4, 7);
-        graph.addUndirectedEdge(5, 6);
-        graph.addUndirectedEdge(5, 8);
-        graph.addUndirectedEdge(6, 7);
-        graph.addUndirectedEdge(6, 8);
+        graph.setUndirectedEdge(0, 1);
+        graph.setUndirectedEdge(0, 2);
+        graph.setUndirectedEdge(1, 2);
+        graph.setUndirectedEdge(1, 5);
+        graph.setUndirectedEdge(2, 3);
+        graph.setUndirectedEdge(2, 4);
+        graph.setUndirectedEdge(2, 5);
+        graph.setUndirectedEdge(2, 6);
+        graph.setUndirectedEdge(3, 4);
+        graph.setUndirectedEdge(3, 6);
+        graph.setUndirectedEdge(3, 7);
+        graph.setUndirectedEdge(4, 7);
+        graph.setUndirectedEdge(5, 6);
+        graph.setUndirectedEdge(5, 8);
+        graph.setUndirectedEdge(6, 7);
+        graph.setUndirectedEdge(6, 8);
 
         return graph;
     }

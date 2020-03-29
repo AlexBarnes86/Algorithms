@@ -49,12 +49,12 @@ public class GFG67 {
      2+----->3+------>1
     */
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addEdge(2, 3);
-        graph.addEdge(3, 1);
-        graph.addEdge(4, 0);
-        graph.addEdge(4, 1);
-        graph.addEdge(5, 0);
-        graph.addEdge(5, 2);
+        graph.setEdge(2, 3);
+        graph.setEdge(3, 1);
+        graph.setEdge(4, 0);
+        graph.setEdge(4, 1);
+        graph.setEdge(5, 0);
+        graph.setEdge(5, 2);
 
         return graph;
     }

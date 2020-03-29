@@ -39,14 +39,14 @@ public class GFG7 {
     }
 
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addEdge(0, 1, 1);
-        graph.addEdge(0, 2, 1);
-        graph.addEdge(1, 3, 1);
-        graph.addEdge(4, 1, 1);
-        graph.addEdge(5, 2, 1);
-        graph.addEdge(5, 6, 1);
-        graph.addEdge(6, 4, 1);
-        graph.addEdge(6, 0, 1);
+        graph.setEdge(0, 1, 1);
+        graph.setEdge(0, 2, 1);
+        graph.setEdge(1, 3, 1);
+        graph.setEdge(4, 1, 1);
+        graph.setEdge(5, 2, 1);
+        graph.setEdge(5, 6, 1);
+        graph.setEdge(6, 4, 1);
+        graph.setEdge(6, 0, 1);
 
         return graph;
     }

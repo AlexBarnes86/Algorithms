@@ -54,11 +54,11 @@ public class GFG8 {
     }
 
     private static Graph addData(Graph graph) {
-        graph.addEdge(0, 1, 1);
-        graph.addEdge(0, 2, 1);
-        graph.addEdge(1, 2, 1);
-        graph.addEdge(2, 0, 1);
-        graph.addEdge(2, 3, 1);
+        graph.setEdge(0, 1, 1);
+        graph.setEdge(0, 2, 1);
+        graph.setEdge(1, 2, 1);
+        graph.setEdge(2, 0, 1);
+        graph.setEdge(2, 3, 1);
         return graph;
     }
 }

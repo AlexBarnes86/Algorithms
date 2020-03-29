@@ -33,20 +33,20 @@ public class GFG94 {
     }
 
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addUndirectedEdge(0, 1, 4);
-        graph.addUndirectedEdge(0, 7, 8);
-        graph.addUndirectedEdge(1, 2, 8);
-        graph.addUndirectedEdge(1, 7, 11);
-        graph.addUndirectedEdge(2, 3, 7);
-        graph.addUndirectedEdge(2, 5, 4);
-        graph.addUndirectedEdge(2, 8, 2);
-        graph.addUndirectedEdge(3, 4, 9);
-        graph.addUndirectedEdge(3, 5, 14);
-        graph.addUndirectedEdge(4, 5, 10);
-        graph.addUndirectedEdge(5, 6, 2);
-        graph.addUndirectedEdge(6, 7, 1);
-        graph.addUndirectedEdge(6, 8, 6);
-        graph.addUndirectedEdge(7, 8, 7);
+        graph.setUndirectedEdge(0, 1, 4);
+        graph.setUndirectedEdge(0, 7, 8);
+        graph.setUndirectedEdge(1, 2, 8);
+        graph.setUndirectedEdge(1, 7, 11);
+        graph.setUndirectedEdge(2, 3, 7);
+        graph.setUndirectedEdge(2, 5, 4);
+        graph.setUndirectedEdge(2, 8, 2);
+        graph.setUndirectedEdge(3, 4, 9);
+        graph.setUndirectedEdge(3, 5, 14);
+        graph.setUndirectedEdge(4, 5, 10);
+        graph.setUndirectedEdge(5, 6, 2);
+        graph.setUndirectedEdge(6, 7, 1);
+        graph.setUndirectedEdge(6, 8, 6);
+        graph.setUndirectedEdge(7, 8, 7);
 
         return graph;
     }

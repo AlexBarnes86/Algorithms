@@ -9,7 +9,6 @@ import java.util.Map;
 import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkArgument;
-import static java.util.stream.Collectors.toList;
 
 class AdjacencyHashGraph implements Graph {
     private int maxObserved;
@@ -21,7 +20,7 @@ class AdjacencyHashGraph implements Graph {
     }
 
     @Override
-    public void addEdge(final int src, final int dest, final int value) {
+    public void setEdge(final int src, final int dest, final int value) {
         int fringe = Math.max(src, dest);
         maxObserved = Math.max(maxObserved, fringe);
 

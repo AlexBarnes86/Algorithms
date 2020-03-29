@@ -72,7 +72,7 @@ public class GFG96 {
 
     private static Graph addData(@NonNull final Graph graph) {
         for(SDWEdge edge : allTestEdges()) {
-            graph.addEdge(edge.getSrc(), edge.getDest(), edge.getWeight());
+            graph.setEdge(edge.getSrc(), edge.getDest(), edge.getWeight());
         }
 
         return graph;

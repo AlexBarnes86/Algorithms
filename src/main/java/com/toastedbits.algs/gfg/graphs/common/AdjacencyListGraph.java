@@ -19,20 +19,24 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public void addEdge(int src, int dest, int value) {
+    public void setEdge(int src, int dest, int value) {
         int fringe = Math.max(src, dest);
         maxObserved = Math.max(maxObserved, fringe);
-
         while(fringe >= list.size()) {
             list.add(null);
         }
+
         if(list.get(src) == null) {
             list.set(src, new ArrayList<>());
         }
         if(list.get(dest) == null) {
             list.set(dest, new ArrayList<>());
         }
-        list.get(src).add(Edges.to(dest, value));
+
+        DWEdge newEdge = Edges.to(dest, value);
+        if(!list.get(src).contains(newEdge)) {
+            list.get(src).add(newEdge);
+        }
     }
 
     @Override

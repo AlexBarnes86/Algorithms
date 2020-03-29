@@ -1,5 +1,7 @@
 package com.toastedbits.algs.gfg.graphs.common;
 
+import lombok.NonNull;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -8,17 +10,23 @@ import java.util.Optional;
 import static java.util.stream.Collectors.toList;
 
 public interface Graph {
-    void addEdge(int src, int dest, int value);
-    default void addEdge(int src, int dest) {
-        addEdge(src, dest, 1);
+    void setEdge(int src, int dest, int value);
+    default void setEdge(int src, int dest) {
+        setEdge(src, dest, 1);
     }
 
-    default void addUndirectedEdge(int a, int b, int value) {
-        addEdge(a, b, value);
-        addEdge(b, a, value);
+    default void setUndirectedEdge(int a, int b, int value) {
+        setEdge(a, b, value);
+        setEdge(b, a, value);
     }
-    default void addUndirectedEdge(int a, int b) {
-        addUndirectedEdge(a, b, 1);
+    default void setUndirectedEdge(int a, int b) {
+        setUndirectedEdge(a, b, 1);
+    }
+
+    default void addWeight(int src, int dest, int value) {
+        getWeight(src, dest).ifPresent(w ->
+            setEdge(src, dest, w + value)
+        );
     }
 
     void deleteEdge(int src, int dest);
@@ -46,6 +54,13 @@ public interface Graph {
             }
         }
         return edges;
+    }
+
+    default Graph addGraph(@NonNull final Graph other) {
+        for(final SDWEdge edge : other.getAllEdges()) {
+            setEdge(edge.getSrc(), edge.getDest(), edge.getWeight());
+        }
+        return this;
     }
 
     int getMaxObserved();

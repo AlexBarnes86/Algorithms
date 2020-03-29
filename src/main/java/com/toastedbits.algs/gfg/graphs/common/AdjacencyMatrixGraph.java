@@ -35,7 +35,7 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public void addEdge(final int src, final int dest, final int value) {
+    public void setEdge(final int src, final int dest, final int value) {
         int fringe = Math.max(src, dest);
         maxObserved = Math.max(maxObserved, fringe);
         if(fringe >= this.size) {

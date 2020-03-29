@@ -2,16 +2,12 @@ package com.toastedbits.algs.gfg.graphs;
 
 import com.toastedbits.algs.gfg.graphs.common.Graph;
 import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphBFS;
 import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphLevelCount;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import java.util.stream.Stream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -45,12 +41,12 @@ public class GFG10 {
     }
 
     private static Graph addData(@NonNull final Graph graph) {
-        graph.addEdge(0, 1);
-        graph.addEdge(0, 2);
-        graph.addEdge(1, 3);
-        graph.addEdge(1, 4);
-        graph.addEdge(1, 5);
-        graph.addEdge(2, 6);
+        graph.setEdge(0, 1);
+        graph.setEdge(0, 2);
+        graph.setEdge(1, 3);
+        graph.setEdge(1, 4);
+        graph.setEdge(1, 5);
+        graph.setEdge(2, 6);
 
         return graph;
     }
