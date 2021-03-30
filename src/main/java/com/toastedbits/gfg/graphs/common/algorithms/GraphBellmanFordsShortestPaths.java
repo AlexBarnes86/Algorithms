@@ -1,7 +1,7 @@
-package com.toastedbits.algs.gfg.graphs.common.algorithms;
+package com.toastedbits.gfg.graphs.common.algorithms;
 
-import com.toastedbits.algs.gfg.graphs.common.Graph;
-import com.toastedbits.algs.gfg.graphs.common.SDWEdge;
+import com.toastedbits.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.SDWEdge;
 import lombok.NonNull;
 
 import java.util.ArrayList;

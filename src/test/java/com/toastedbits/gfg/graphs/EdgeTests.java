@@ -1,6 +1,6 @@
-package com.toastedbits.algs.gfg.graphs;
+package com.toastedbits.gfg.graphs;
 
-import com.toastedbits.algs.gfg.graphs.common.Edges;
+import com.toastedbits.gfg.graphs.common.Edges;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 

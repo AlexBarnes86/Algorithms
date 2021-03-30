@@ -1,9 +1,9 @@
-package com.toastedbits.algs.gfg.graphs;
+package com.toastedbits.gfg.graphs;
 
-import com.toastedbits.algs.gfg.graphs.common.AdjacencyMatrixGraph;
-import com.toastedbits.algs.gfg.graphs.common.Graph;
-import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphKCore;
+import com.toastedbits.gfg.graphs.common.AdjacencyMatrixGraph;
+import com.toastedbits.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.Graphs;
+import com.toastedbits.gfg.graphs.common.algorithms.GraphKCore;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;

@@ -1,4 +1,4 @@
-package com.toastedbits.algs.gfg.graphs.common;
+package com.toastedbits.gfg.graphs.common;
 
 import lombok.Data;
 import lombok.Getter;
@@ -13,7 +13,7 @@ public class DWEdge {
         this.weight = weight;
     }
 
-    SDWEdge withSource(Integer source) {
-        return new SDWEdge(source, dest, weight);
+    com.toastedbits.gfg.graphs.common.SDWEdge withSource(Integer source) {
+        return new com.toastedbits.gfg.graphs.common.SDWEdge(source, dest, weight);
     }
 }

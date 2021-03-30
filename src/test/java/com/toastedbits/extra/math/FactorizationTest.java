@@ -1,4 +1,4 @@
-package com.toastedbits.algs.extra.math;
+package com.toastedbits.extra.math;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -15,8 +15,8 @@ public class FactorizationTest {
         final List<Integer> primes = SieveEratosthenes.findPrimes(1_000_000);
 
         //Test against some random numbers that we have pre-computed the prime factorizations for
-        assertThat(PrimeFactorization.factorize(2, primes).asList(), equalTo(List.of(2)));
-        assertThat(PrimeFactorization.factorize(987650, primes).asList(), equalTo(List.of(2, 5, 5, 19753)));
-        assertThat(PrimeFactorization.factorize(111114, primes).asList(), equalTo(List.of(2, 3, 3, 6173)));
+        assertThat(com.toastedbits.algs.extra.math.PrimeFactorization.factorize(2, primes).asList(), equalTo(List.of(2)));
+        assertThat(com.toastedbits.algs.extra.math.PrimeFactorization.factorize(987650, primes).asList(), equalTo(List.of(2, 5, 5, 19753)));
+        assertThat(com.toastedbits.algs.extra.math.PrimeFactorization.factorize(111114, primes).asList(), equalTo(List.of(2, 3, 3, 6173)));
     }
 }

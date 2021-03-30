@@ -1,4 +1,4 @@
-package com.toastedbits.algs.extra.math;
+package com.toastedbits.extra.math;
 
 import com.google.common.collect.ImmutableList;
 import org.junit.jupiter.api.Assertions;

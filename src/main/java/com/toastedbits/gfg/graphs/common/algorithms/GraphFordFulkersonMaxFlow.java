@@ -1,9 +1,9 @@
-package com.toastedbits.algs.gfg.graphs.common.algorithms;
+package com.toastedbits.gfg.graphs.common.algorithms;
 
-import com.toastedbits.algs.gfg.graphs.common.DWEdge;
-import com.toastedbits.algs.gfg.graphs.common.Graph;
-import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.SDWEdge;
+import com.toastedbits.gfg.graphs.common.DWEdge;
+import com.toastedbits.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.Graphs;
+import com.toastedbits.gfg.graphs.common.SDWEdge;
 import lombok.Builder;
 import lombok.NonNull;
 import lombok.Value;
@@ -23,14 +23,14 @@ import java.util.stream.Collectors;
 @Slf4j
 public class GraphFordFulkersonMaxFlow {
     @Value
-    @Builder(builderClassName="Builder")
+    @Builder
     public static class Result {
         int maxFlow;
         Graph residuals;
     }
 
     @Value
-    @Builder(builderClassName="Builder")
+    @Builder
     private static class AugmentPath {
         int criticalValue;
         List<Integer> path;

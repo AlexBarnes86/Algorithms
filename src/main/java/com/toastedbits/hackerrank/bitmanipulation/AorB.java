@@ -1,6 +1,6 @@
 package com.toastedbits.hackerrank.bitmanipulation;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Optional;
@@ -209,26 +209,26 @@ public class AorB {
         return removeZeros(sb).toString();
     }
 
-    @Test
-    public void testSample() {
-        log("toBitArray: " + booleanArrayToStr(new boolean[]{false, false, false, true}));
-
-        for(char ch = '0'; ch <= '9'; ++ch) {
-            boolean[] bitAry = getBitArrayFromHexCharacter(ch);
-            log(ch + ": " + Arrays.toString(bitAry) + ", toBitArray: " + booleanArrayToStr(bitAry) + ", bitsToHex: " + bitsToHex(bitAry));
-        }
-        for(char ch = 'A'; ch <= 'F'; ++ch) {
-            boolean[] bitAry = getBitArrayFromHexCharacter(ch);
-            log(ch + ": " + Arrays.toString(bitAry) + ", toBitArray: " + booleanArrayToStr(bitAry) + ", bitsToHex: " + bitsToHex(bitAry));
-        }
-
-        Optional<Result> result = aOrB(12, "A42", "B", "CD332F");
-        result.ifPresent(res -> {
-            log("" + res);
-        });
-
-        log("Translate: " + bitArrayToHexStr(toBitArray("CD332F", 32)));
-    }
+//    @Test
+//    public void testSample() {
+//        log("toBitArray: " + booleanArrayToStr(new boolean[]{false, false, false, true}));
+//
+//        for(char ch = '0'; ch <= '9'; ++ch) {
+//            boolean[] bitAry = getBitArrayFromHexCharacter(ch);
+//            log(ch + ": " + Arrays.toString(bitAry) + ", toBitArray: " + booleanArrayToStr(bitAry) + ", bitsToHex: " + bitsToHex(bitAry));
+//        }
+//        for(char ch = 'A'; ch <= 'F'; ++ch) {
+//            boolean[] bitAry = getBitArrayFromHexCharacter(ch);
+//            log(ch + ": " + Arrays.toString(bitAry) + ", toBitArray: " + booleanArrayToStr(bitAry) + ", bitsToHex: " + bitsToHex(bitAry));
+//        }
+//
+//        Optional<Result> result = aOrB(12, "A42", "B", "CD332F");
+//        result.ifPresent(res -> {
+//            log("" + res);
+//        });
+//
+//        log("Translate: " + bitArrayToHexStr(toBitArray("CD332F", 32)));
+//    }
 
     private static final Scanner scanner = new Scanner(System.in);
 

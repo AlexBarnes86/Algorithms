@@ -1,4 +1,4 @@
-package com.toastedbits.algs.gfg.graphs.common;
+package com.toastedbits.gfg.graphs.common;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-class AdjacencyHashGraph implements Graph {
+class AdjacencyHashGraph implements com.toastedbits.gfg.graphs.common.Graph {
     private int maxObserved;
     private final Map<Integer, Map<Integer, Integer>> graph;
 
@@ -42,7 +42,7 @@ class AdjacencyHashGraph implements Graph {
     public void deleteVertex(final int vert) {
         checkArgument(containsVertex(vert), "No source vertex: " + vert);
         if(graph.containsKey(vert)) {
-            for(final DWEdge edge : getAdjacentEdges(vert)) {
+            for(final com.toastedbits.gfg.graphs.common.DWEdge edge : getAdjacentEdges(vert)) {
                 deleteUndirectedEdge(vert, edge.getDest());
             }
             graph.remove(vert);
@@ -74,10 +74,10 @@ class AdjacencyHashGraph implements Graph {
     public Collection<DWEdge> getAdjacentEdges(final int src) {
         checkArgument(containsVertex(src), "No source vertex: " + src);
         final Map<Integer, Integer> edges = graph.get(src);
-        final List<DWEdge> adj = new ArrayList<>();
+        final List<com.toastedbits.gfg.graphs.common.DWEdge> adj = new ArrayList<>();
         if(edges != null) {
             for (Map.Entry<Integer, Integer> edge : edges.entrySet()) {
-                adj.add(Edges.to(edge.getKey(), edge.getValue()));
+                adj.add(com.toastedbits.gfg.graphs.common.Edges.to(edge.getKey(), edge.getValue()));
             }
         }
 

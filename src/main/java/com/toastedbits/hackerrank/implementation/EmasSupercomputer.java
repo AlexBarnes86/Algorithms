@@ -1,6 +1,6 @@
 package com.toastedbits.hackerrank.implementation;
 
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.io.*;
 import java.math.*;
@@ -78,41 +78,41 @@ public class EmasSupercomputer {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    @Test
-    public void test() {
-        twoPluses(new String[] {
-            "GGGGGG",
-            "GBBBGB",
-            "GGGGGG",
-            "GGBBGB",
-            "GGGGGG"
-        });
-        twoPluses(new String[] {
-            "BBBBBBBBGBB",
-            "BBBBBBBBGBB",
-            "BBBBBBGGGGG",
-            "BBBBBBBBGBB",
-            "BBBBBBGBGBB",
-            "BBBBGBGBBBB",
-            "BBBBGBGBBBB",
-            "BBBBGBGBBBB",
-            "BGGGGGGGGGG",
-            "BBBBGBGBBBB",
-            "BBBBGBGBBBB",
-            "BBBBGBGBBBB",
-            "BBBBBBGBBBB"
-        });
-        twoPluses(new String[]{
-            "GGGGGGGG",
-            "GBGBGGBG",
-            "GBGBGGBG",
-            "GGGGGGGG",
-            "GBGBGGBG",
-            "GGGGGGGG",
-            "GBGBGGBG",
-            "GGGGGGGG"
-        });
-    }
+//    @Test
+//    public void test() {
+//        twoPluses(new String[] {
+//            "GGGGGG",
+//            "GBBBGB",
+//            "GGGGGG",
+//            "GGBBGB",
+//            "GGGGGG"
+//        });
+//        twoPluses(new String[] {
+//            "BBBBBBBBGBB",
+//            "BBBBBBBBGBB",
+//            "BBBBBBGGGGG",
+//            "BBBBBBBBGBB",
+//            "BBBBBBGBGBB",
+//            "BBBBGBGBBBB",
+//            "BBBBGBGBBBB",
+//            "BBBBGBGBBBB",
+//            "BGGGGGGGGGG",
+//            "BBBBGBGBBBB",
+//            "BBBBGBGBBBB",
+//            "BBBBGBGBBBB",
+//            "BBBBBBGBBBB"
+//        });
+//        twoPluses(new String[]{
+//            "GGGGGGGG",
+//            "GBGBGGBG",
+//            "GBGBGGBG",
+//            "GGGGGGGG",
+//            "GBGBGGBG",
+//            "GGGGGGGG",
+//            "GBGBGGBG",
+//            "GGGGGGGG"
+//        });
+//    }
 
     private static char[][] toCharGrid(String[] strings) {
         char[][] grid = new char[strings.length][strings[0].length()];

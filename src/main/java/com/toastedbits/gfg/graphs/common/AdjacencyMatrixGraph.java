@@ -1,4 +1,4 @@
-package com.toastedbits.algs.gfg.graphs.common;
+package com.toastedbits.gfg.graphs.common;
 
 import com.google.common.collect.ImmutableSet;
 import lombok.extern.slf4j.Slf4j;
@@ -9,7 +9,7 @@ import java.util.Optional;
 import static com.google.common.base.Preconditions.checkArgument;
 
 @Slf4j
-public class AdjacencyMatrixGraph implements Graph {
+public class AdjacencyMatrixGraph implements com.toastedbits.gfg.graphs.common.Graph {
     private int size;
     private int maxObserved;
     private int[][] matrix;
@@ -58,7 +58,7 @@ public class AdjacencyMatrixGraph implements Graph {
     public void deleteVertex(final int vert) {
         checkArgument(containsVertex(vert), "No source vertex: " + vert);
         if(vert < matrix.length) {
-            for(final DWEdge edge : getAdjacentEdges(vert)) {
+            for(final com.toastedbits.gfg.graphs.common.DWEdge edge : getAdjacentEdges(vert)) {
                 deleteUndirectedEdge(vert, edge.getDest());
             }
             matrix[vert][vert] = 0;
@@ -94,9 +94,9 @@ public class AdjacencyMatrixGraph implements Graph {
     }
 
     @Override
-    public Collection<DWEdge> getAdjacentEdges(final int src) {
+    public Collection<com.toastedbits.gfg.graphs.common.DWEdge> getAdjacentEdges(final int src) {
         checkArgument(containsVertex(src), "No source vertex: " + src);
-        final ImmutableSet.Builder<DWEdge> builder = ImmutableSet.builder();
+        final ImmutableSet.Builder<com.toastedbits.gfg.graphs.common.DWEdge> builder = ImmutableSet.builder();
 
         if(src >= this.size) {
             return builder.build();
@@ -105,7 +105,7 @@ public class AdjacencyMatrixGraph implements Graph {
         for(int i = 0; i < this.size; ++i) {
             if(matrix[src][i] != 0) {
                 //log.debug("visit edge {} -> {}", vertex, i);
-                builder.add(Edges.to(i, matrix[src][i]));
+                builder.add(com.toastedbits.gfg.graphs.common.Edges.to(i, matrix[src][i]));
             }
         }
 

@@ -1,14 +1,15 @@
-package com.toastedbits.algs.gfg.graphs;
+package com.toastedbits.gfg.graphs;
 
 //Bellman-Ford Algorithm
 //https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
 
 import com.google.common.collect.ImmutableList;
-import com.toastedbits.algs.gfg.graphs.common.Edges;
-import com.toastedbits.algs.gfg.graphs.common.Graph;
-import com.toastedbits.algs.gfg.graphs.common.Graphs;
-import com.toastedbits.algs.gfg.graphs.common.SDWEdge;
-import com.toastedbits.algs.gfg.graphs.common.algorithms.GraphBellmanFordsShortestPaths;
+import com.toastedbits.gfg.graphs.common.Edges;
+import com.toastedbits.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.Graphs;
+import com.toastedbits.gfg.graphs.common.SDWEdge;
+import com.toastedbits.gfg.graphs.common.algorithms.GraphBellmanFordsShortestPaths;
+import com.toastedbits.gfg.graphs.common.Edges;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.params.ParameterizedTest;

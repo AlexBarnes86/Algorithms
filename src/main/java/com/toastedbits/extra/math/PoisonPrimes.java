@@ -1,4 +1,4 @@
-package com.toastedbits.algs.extra.math;
+package com.toastedbits.extra.math;
 
 import com.google.common.collect.ImmutableList;
 
@@ -68,7 +68,7 @@ public class PoisonPrimes {
       it operates only one prime at a time larger to smaller based on column_idx
       the decisions it makes at each recursion are stored in the decision map
     */
-    private Optional<Map<Integer, Integer>> findMaxDecision(final List<PrimeFactorization> candidates, List<Integer> primeFactorList, Map<Integer, Integer> decisionMap) {
+    private Optional<Map<Integer, Integer>> findMaxDecision(final List<com.toastedbits.algs.extra.math.PrimeFactorization> candidates, List<Integer> primeFactorList, Map<Integer, Integer> decisionMap) {
         if(primeFactorList.isEmpty()) {
             return Optional.empty();
         }
@@ -80,7 +80,7 @@ public class PoisonPrimes {
         int numCandidates = candidates.size();
 
         for(int row = 0; row < numCandidates; ++row) {
-            PrimeFactorization primeFactorization = candidates.get(row);
+            com.toastedbits.algs.extra.math.PrimeFactorization primeFactorization = candidates.get(row);
             if(!primeFactorization.contains(primeFactor)) {
                 continue;
             }

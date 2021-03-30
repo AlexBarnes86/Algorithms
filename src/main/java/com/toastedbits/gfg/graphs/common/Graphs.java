@@ -1,4 +1,4 @@
-package com.toastedbits.algs.gfg.graphs.common;
+package com.toastedbits.gfg.graphs.common;
 
 import lombok.extern.slf4j.Slf4j;
 

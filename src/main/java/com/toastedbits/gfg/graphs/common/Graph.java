@@ -1,4 +1,4 @@
-package com.toastedbits.algs.gfg.graphs.common;
+package com.toastedbits.gfg.graphs.common;
 
 import lombok.NonNull;
 
@@ -45,8 +45,8 @@ public interface Graph {
         return getAdjacentEdges(src).stream().map(DWEdge::getDest).collect(toList());
     }
 
-    default List<SDWEdge> getAllEdges() {
-        List<SDWEdge> edges = new ArrayList<>();
+    default List<com.toastedbits.gfg.graphs.common.SDWEdge> getAllEdges() {
+        List<com.toastedbits.gfg.graphs.common.SDWEdge> edges = new ArrayList<>();
         for(int i = 0; i < getSize(); ++i) {
             if(containsVertex(i)) {
                 final int source = i;
@@ -57,7 +57,7 @@ public interface Graph {
     }
 
     default Graph addGraph(@NonNull final Graph other) {
-        for(final SDWEdge edge : other.getAllEdges()) {
+        for(final com.toastedbits.gfg.graphs.common.SDWEdge edge : other.getAllEdges()) {
             setEdge(edge.getSrc(), edge.getDest(), edge.getWeight());
         }
         return this;

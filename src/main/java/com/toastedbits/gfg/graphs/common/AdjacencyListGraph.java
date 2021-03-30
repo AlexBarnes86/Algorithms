@@ -1,4 +1,4 @@
-package com.toastedbits.algs.gfg.graphs.common;
+package com.toastedbits.gfg.graphs.common;
 
 import com.google.common.collect.ImmutableSet;
 
@@ -9,8 +9,8 @@ import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-public class AdjacencyListGraph implements Graph {
-    private final List<List<DWEdge>> list;
+public class AdjacencyListGraph implements com.toastedbits.gfg.graphs.common.Graph {
+    private final List<List<com.toastedbits.gfg.graphs.common.DWEdge>> list;
     private int maxObserved;
 
     AdjacencyListGraph() {
@@ -33,7 +33,7 @@ public class AdjacencyListGraph implements Graph {
             list.set(dest, new ArrayList<>());
         }
 
-        DWEdge newEdge = Edges.to(dest, value);
+        com.toastedbits.gfg.graphs.common.DWEdge newEdge = com.toastedbits.gfg.graphs.common.Edges.to(dest, value);
         if(!list.get(src).contains(newEdge)) {
             list.get(src).add(newEdge);
         }
@@ -52,7 +52,7 @@ public class AdjacencyListGraph implements Graph {
     public void deleteVertex(final int vert) {
         checkArgument(containsVertex(vert), "No source vertex: " + vert);
         if(vert < list.size()) {
-            for(final DWEdge edge : getAdjacentEdges(vert)) {
+            for(final com.toastedbits.gfg.graphs.common.DWEdge edge : getAdjacentEdges(vert)) {
                 deleteUndirectedEdge(vert, edge.getDest());
             }
             list.set(vert, null);
@@ -64,7 +64,7 @@ public class AdjacencyListGraph implements Graph {
         checkArgument(containsVertex(src), "No source vertex: " + src);
         checkArgument(containsVertex(dest), "No destination vertex: " + dest);
 
-        for(final DWEdge edge : list.get(src)) {
+        for(final com.toastedbits.gfg.graphs.common.DWEdge edge : list.get(src)) {
             if(edge.getDest() == dest) {
                 return Optional.of(edge.getWeight());
             }
@@ -86,7 +86,7 @@ public class AdjacencyListGraph implements Graph {
     }
 
     @Override
-    public Collection<DWEdge> getAdjacentEdges(final int src) {
+    public Collection<com.toastedbits.gfg.graphs.common.DWEdge> getAdjacentEdges(final int src) {
         checkArgument(containsVertex(src), "No source vertex: " + src);
         return ImmutableSet.copyOf(list.get(src));
     }
@@ -100,7 +100,7 @@ public class AdjacencyListGraph implements Graph {
     public String toString() {
         final StringBuilder sb = new StringBuilder();
         for(int i = 0; i < list.size(); ++i) {
-            final List<DWEdge> edges = list.get(i);
+            final List<com.toastedbits.gfg.graphs.common.DWEdge> edges = list.get(i);
             sb.append(i).append(" -> ").append(edges);
             if(i != list.size() - 1) {
                 sb.append(", ");

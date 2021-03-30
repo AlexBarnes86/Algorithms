@@ -1,6 +1,6 @@
-package com.toastedbits.algs.gfg.graphs.common.algorithms;
+package com.toastedbits.gfg.graphs.common.algorithms;
 
-import com.toastedbits.algs.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.Graph;
 import lombok.Builder;
 import lombok.NonNull;
 import lombok.Value;
@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class GraphLevelCount {
     @Value
-    @Builder(builderClassName="Builder")
+    @Builder
     public static class Results {
         Map<Integer, Integer> levels;
         List<Integer> maxVerts;

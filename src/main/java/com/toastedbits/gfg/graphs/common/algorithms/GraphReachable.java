@@ -1,6 +1,6 @@
-package com.toastedbits.algs.gfg.graphs.common.algorithms;
+package com.toastedbits.gfg.graphs.common.algorithms;
 
-import com.toastedbits.algs.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.Graph;
 import lombok.NonNull;
 
 import static com.google.common.base.Preconditions.checkArgument;

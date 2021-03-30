@@ -1,6 +1,6 @@
-package com.toastedbits.algs.gfg.graphs.common.algorithms;
+package com.toastedbits.gfg.graphs.common.algorithms;
 
-import com.toastedbits.algs.gfg.graphs.common.Graph;
+import com.toastedbits.gfg.graphs.common.Graph;
 import lombok.NonNull;
 
 import java.util.Optional;
@@ -16,7 +16,7 @@ public class GraphMotherVertex {
             GraphDFS.dfs(graph, i, v -> visited[v] = true);
         }
 
-        if(GraphReachable.allReachable(graph, mother_vertex)) {
+        if(com.toastedbits.gfg.graphs.common.algorithms.GraphReachable.allReachable(graph, mother_vertex)) {
             return Optional.of(mother_vertex);
         }
         return Optional.empty();

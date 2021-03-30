@@ -1,4 +1,4 @@
-package com.toastedbits.algs.extra.math;
+package com.toastedbits.extra.math;
 
 import java.util.ArrayList;
 import java.util.List;
