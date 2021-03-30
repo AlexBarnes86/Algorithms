@@ -1,0 +1,200 @@
+"wheat",1,1
+"flour, or one chicken",1,2
+"iron",1,10
+"tobacco or copper",1,50
+"cinnamon",1,100
+"ginger or pepper",1,200
+"salt or silver",1,500
+"saffron or cloves",1,1500
+"gold",1,5000
+"platinum",1,50000
+"Gauntlet",1,200
+"Dagger",1,200
+"Dagger, punching",1,200
+"Gauntlet, spiked",1,500
+"Mace, light",4,500
+"Sickle",2,600
+"Club",3,1
+"Mace, heavy",8,1200
+"Morningstar",6,800
+"Shortspear",3,100
+"Longspear",9,500
+"Quarterstaff",4,10
+"Spear",6,200
+"Crossbow, heavy",8,5000
+"Bolts, crossbow (10)",1,100
+"Crossbow, light",4,3500
+"Javelin",2,100
+"Sling",0,10
+"Bullets, sling (10)",5,10
+"Axe, throwing",2,800
+"Hammer, light",2,100
+"Handaxe",3,600
+"Kukri",2,800
+"Pick, light",3,400
+"Sap",2,100
+"Sword, short",2,1000
+"Battleaxe",6,1000
+"Flail",5,800
+"Longsword",4,1500
+"Pick, heavy",6,800
+"Rapier",2,2000
+"Scimitar",4,1500
+"Trident",4,1500
+"Warhammer",5,1200
+"Falchion",8,7500
+"Glaive",10,800
+"Greataxe",12,2000
+"Greatclub",8,500
+"Flail, heavy",10,1500
+"Greatsword",8,5000
+"Guisarme",12,900
+"Halberd",12,1000
+"Lance",10,1000
+"Ranseur",12,1000
+"Scythe",10,1800
+"Longbow",3,7500
+"Arrows (20)",3,100
+"Longbow, composite",3,10000
+"Shortbow",2,3000
+"Shortbow, composite",2,7500
+"Kama",2,200
+"Nunchaku",2,200
+"Sai",1,100
+"Siangham",1,300
+"Sword, bastard",6,3500
+"Waraxe, dwarven",8,3000
+"Whip",3,100
+"Axe, orc double",15,6000
+"Chain, spiked",10,2500
+"Flail, dire",10,9000
+"Hammer, gnome hooked",6,2000
+"Sword, two-bladed",10,10000
+"Urgrosh, dwarven",12,5000
+"Bolas",2,500
+"Crossbow, hand",2,10000
+"Bolts (10)",1,100
+"Crossbow, repeating heavy",12,40000
+"Crossbow, repeating light",6,25000
+"Net",5,2000
+"Padded",10,500
+"Leather",15,1000
+"Studded leather",20,2500
+"Chain shirt",25,10000
+"Hide",25,1500
+"Scale mail",30,5000
+"Chainmail",40,15000
+"Breastplate",30,20000
+"Splint mail",45,20000
+"Banded mail",35,25000
+"Half-plate",50,60000
+"Full plate",50,150
+"Buckler",5,1500
+"Shield, light wooden",5,300
+"Shield, light steel",6,900
+"Shield, heavy wooden",10,700
+"Shield, heavy steel",15,2000
+"Shield, tower",45,3000
+"Gauntlet, locked",2,800
+"Shield spikes",5,1000
+"Barrel (empty)",30,200
+"Basket (empty)",1,40
+"Bedroll",5,10
+"Blanket, winter",3,50
+"Block and tackle",5,500
+"Bottle, wine, glass",1,200
+"Bucket (empty)",2,50
+"Caltrops",2,100
+"Canvas (sq. yd.)",1,10
+"Chain (10 ft.)",2,3000
+"Chest (empty)",25,200
+"Crowbar",5,200
+"Firewood (per day)",20,1
+"Fishing net, 25 sq. ft.",5,400
+"Grappling hook",4,100
+"Hammer",2,50
+"Jug, clay",9,3
+"Ladder, 10-foot",20,5
+"Lamp, common",1,10
+"Lantern, bullseye",3,1200
+"Lantern, hooded",2,700
+"Lock, Very simple",1,2000
+"Lock, Average",1,4000
+"Lock, Good",1,8000
+"Lock, Amazing",1,15000
+"Manacles",2,1500
+"Manacles, masterwork",2,5000
+"Mug/Tankard, clay",1,2
+"Oil (1-pint flask)",1,10
+"Pick, miner's",10,300
+"Pitcher, clay",5,2
+"Pole, 10-foot",8,20
+"Pot, iron",10,50
+"Ram, portable",20,1000
+"Rations, trail (per day)",1,50
+"Rope, hempen (50 ft.)",10,100
+"Rope, silk (50 ft.)",5,1000
+"Sealing wax",1,100
+"Sledge",10,100
+"Soap (per)",1,50
+"Spade or shovel",8,200
+"Spyglass",1,100
+"Tent",20,1000
+"Torch",1,1
+"Waterskin",4,100
+"Whetstone",1,2
+"Acid (flask)",1,1000
+"Alchemist's fire (flask)",1,2000
+"Everburning torch",1,11000
+"Holy water (flask)",1,2500
+"Smokestick",1,2000
+"Sunrod",1,200
+"Tanglefoot bag",4,5000
+"Thunderstone",1,3000
+"Alchemist's lab",40,50000
+"Artisan's tools",5,500
+"Artisan's tools, masterwork",5,5500
+"Climber's kit",5,8000
+"Disguise kit",8,5000
+"Healer's kit",1,5000
+"Holy symbol, silver",1,2500
+"Hourglass",1,2500
+"Magnifying glass",1,10000
+"Musical instrument, common",3,500
+"Musical instrument, masterwork",3,10000
+"Scale, merchant's",1,200
+"Spell component pouch",2,500
+"Spellbook, wizard's (blank)",3,1500
+"Thieves' tools",1,3000
+"Thieves' tools, masterwork",2,10000
+"Tool, masterwork",1,5000
+"Water clock",200,100
+"Artisan's outfit",4,100
+"Cleric's vestments",6,500
+"Cold weather outfit",7,800
+"Courtier's outfit",6,3000
+"Entertainer's outfit",4,300
+"Explorer's outfit",8,1000
+"Monk's outfit",2,500
+"Noble's outfit",10,7500
+"Peasant's outfit",2,10
+"Royal outfit",15,20000
+"Scholar's outfit",6,500
+"Traveler's outfit",5,100
+"Ale, Gallon",8,20
+"Ale, Mug",1,4
+"Bread, per loaf",1,2
+"Cheese, hunk of",1,10
+"Meat, chunk of",1,30
+"Wine, Common (pitcher)",6,20
+"Wine, Fine (bottle)",1,1000
+"Bit and bridle",1,200
+"Feed (per day)",10,5
+"Saddle",30,2000
+"Saddlebags",8,400
+"Carriage",600,10000
+"Cart",200,1500
+"Rowboat",100,5000
+"Oar",10,200
+"Sled",300,2000
+"Wagon",400,3500

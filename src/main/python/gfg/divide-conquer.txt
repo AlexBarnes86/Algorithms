@@ -1,0 +1,5 @@
+Transform the problem if necessary, e.g. go from raw values to deltas
+
+Divide the base problem into subproblems, start with cut right in the middle
+Categorize each subproblem into cases - see if small instances can be solved directly
+Combine solutions
