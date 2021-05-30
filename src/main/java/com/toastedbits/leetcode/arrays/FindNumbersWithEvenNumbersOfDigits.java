@@ -1,4 +1,4 @@
-package com.toastedbits.leetcode;
+package com.toastedbits.leetcode.arrays;
 
 public class FindNumbersWithEvenNumbersOfDigits {
     private int countDigits(int num) {
