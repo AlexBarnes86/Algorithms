@@ -2,7 +2,6 @@ package com.toastedbits.kt.chp1;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Data;
@@ -10,20 +9,16 @@ import lombok.RequiredArgsConstructor;
 
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Deque;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Stack;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.toList;
 
 /**
  * Assume a set of men, m, and women, w
@@ -78,7 +73,7 @@ public class GaleShapley {
                 else {
                     int m2 = engagements.get(w);
                     List<Integer> wPref = women.get(w);
-                    if(wPref.indexOf(m) < wPref.indexOf(m2)) {
+                    if(wPref.get(m) < wPref.get(m2)) {
                         engagements.put(w, m);
                         queue.add(m2);
                         //System.out.format("Engaged: m2: %d, wPref: %s, Engagements: %s%n", m2, wPref, engagements);
@@ -109,13 +104,15 @@ public class GaleShapley {
     }
 
     public static void main(String[] args) {
-        for(int i = 0; i < 10; ++i) {
-            System.out.println("Iteration: " + i);
-            int n = 3;
-            Instance instance = Instance.createInstance(n);
-            instance.print(System.out);
-            System.out.println("Engagements:\n" + instance.solve());
+        StringBuilder sb = new StringBuilder();
+        for(int i = 1; i <= 1000; ++i) {
+            long startTime = System.nanoTime();
+            Instance instance = Instance.createInstance(i);
+            Map<Integer, Integer> solution = instance.solve();
+            long endTime = System.nanoTime();
+            sb.append(i + ", " + (endTime - startTime) + ", " + solution.size() + "\n");
         }
+        System.out.println(sb);
     }
 
     private void test() {
