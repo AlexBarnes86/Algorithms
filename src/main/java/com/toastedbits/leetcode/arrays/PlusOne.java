@@ -19,7 +19,7 @@ public class PlusOne {
     }
 
     private void solve(int[] ary) {
-        ArrayUtil.printArray(plusOne(ary));
+        ArrayUtil.println(plusOne(ary));
     }
 
     public static void main(String[] args) {

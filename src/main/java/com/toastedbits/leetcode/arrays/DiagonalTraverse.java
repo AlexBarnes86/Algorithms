@@ -50,7 +50,7 @@ public class DiagonalTraverse {
     }
 
     private void solve(int[][] mat) {
-        ArrayUtil.printArray(findDiagonalOrder(mat));
+        ArrayUtil.println(findDiagonalOrder(mat));
     }
 
     public static void main(String[] args) {
