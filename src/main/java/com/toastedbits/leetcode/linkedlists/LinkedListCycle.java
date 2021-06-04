@@ -1,8 +1,5 @@
 package com.toastedbits.leetcode.linkedlists;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class LinkedListCycle {
     class ListNode {
         int val;
@@ -15,16 +12,15 @@ public class LinkedListCycle {
     }
 
     public boolean hasCycle(ListNode head) {
+        final int MAX = 10001;
         ListNode cur = head;
-        Set<ListNode> set = new HashSet<>();
-        while(cur != null) {
-            if(set.contains(cur)) {
-                return true;
+        for(int i = 0; i < MAX; ++i) {
+            if(cur == null) {
+                return false;
             }
-            set.add(cur);
             cur = cur.next;
         }
 
-        return false;
+        return true;
     }
 }
