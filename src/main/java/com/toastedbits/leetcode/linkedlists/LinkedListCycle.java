@@ -12,15 +12,19 @@ public class LinkedListCycle {
     }
 
     public boolean hasCycle(ListNode head) {
-        final int MAX = 10001;
         ListNode cur = head;
-        for(int i = 0; i < MAX; ++i) {
-            if(cur == null) {
-                return false;
+        ListNode prev;
+        ListNode dummy = new ListNode(Integer.MIN_VALUE);
+
+        while(cur != null) {
+            if(cur == dummy) {
+                return true;
             }
+            prev = cur;
             cur = cur.next;
+            prev.next = dummy;
         }
 
-        return true;
+        return false;
     }
 }
