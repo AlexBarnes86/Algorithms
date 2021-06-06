@@ -18,46 +18,16 @@ public class OddEvenLinkedList {
         }
     }
 
-    private ListNode getTail(ListNode head) {
-        ListNode cur = head;
-        while(cur.next != null) {
-            cur = cur.next;
-        }
-        return cur;
-    }
-
     public ListNode oddEvenList(ListNode head) {
-        if(head == null) {
-            return null;
+        if (head == null) return null;
+        ListNode odd = head, even = head.next, evenHead = even;
+        while (even != null && even.next != null) {
+            odd.next = even.next;
+            odd = odd.next;
+            even.next = odd.next;
+            even = even.next;
         }
-
-        ListNode cur = head.next;
-
-        if(cur == null) {
-            return head;
-        }
-
-        ListNode prev = head;
-        ListNode tail = getTail(head);
-        ListNode fin = cur;
-        int ct = 1;
-        do {
-            if(ct % 2 == 1) {
-                ListNode temp = cur;
-                cur = cur.next;
-                if(cur != null) {
-                    prev.next = cur;
-                    temp.next = null;
-                    tail.next = temp;
-                    tail = temp;
-                }
-            }
-            else {
-                prev = cur;
-                cur = cur.next;
-            }
-            ct++;
-        } while(cur != null && cur != fin);
+        odd.next = evenHead;
         return head;
     }
 
