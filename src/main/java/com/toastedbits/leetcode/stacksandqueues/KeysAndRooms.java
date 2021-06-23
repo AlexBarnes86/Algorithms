@@ -3,20 +3,30 @@ package com.toastedbits.leetcode.stacksandqueues;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+import java.util.Stack;
 
 public class KeysAndRooms {
     public boolean canVisitAllRooms(List<List<Integer>> rooms) {
-        Set<Integer> keys = new HashSet<>();
-        keys.add(0);
-        for(int i = 0; i < rooms.size(); ++i) {
-            if(!keys.contains(i)) {
+        boolean[] visited = new boolean[rooms.size()];
+        Stack<Integer> stack = new Stack<>();
+        stack.push(0);
+        while(!stack.isEmpty()) {
+            int cur = stack.pop();
+            visited[cur] = true;
+            for(int key : rooms.get(cur)) {
+                if(key >= 0 && key < rooms.size() && !visited[key]) {
+                    stack.push(key);
+                }
+            }
+        }
+
+        for(boolean room : visited) {
+            if(!room) {
                 return false;
             }
-            keys.addAll(rooms.get(i));
         }
+
         return true;
     }
 
@@ -42,7 +52,7 @@ public class KeysAndRooms {
         List<List<Integer>> rooms = new ArrayList<>();
         rooms.add(Arrays.asList(2));
         rooms.add(Arrays.asList());
-        rooms.add(Collections.singletonList(3));
+        rooms.add(Collections.singletonList(1));
         System.out.println(canVisitAllRooms(rooms));
     }
 
