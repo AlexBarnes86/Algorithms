@@ -1,30 +1,13 @@
 package com.toastedbits.leetcode.trees;
 
+import com.toastedbits.leetcode.utils.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 public class BinaryTreeLevelOrderTraversal {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public List<List<Integer>> levelOrder(TreeNode root) {
         if(root == null) {
             return new ArrayList<>();
