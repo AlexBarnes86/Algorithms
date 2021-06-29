@@ -1,4 +1,4 @@
-package com.toastedbits.leetcode.trees;
+package com.toastedbits.leetcode.binarytrees;
 
 import com.toastedbits.leetcode.utils.BinaryTreeUtils;
 import com.toastedbits.leetcode.utils.TreeNode;

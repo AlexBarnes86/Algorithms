@@ -1,4 +1,4 @@
-package com.toastedbits.leetcode.trees;
+package com.toastedbits.leetcode.binarytrees;
 
 public class MaximumDepthOfBinaryTree {
     public class TreeNode {

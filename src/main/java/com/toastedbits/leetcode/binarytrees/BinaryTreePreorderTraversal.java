@@ -1,9 +1,9 @@
-package com.toastedbits.leetcode.trees;
+package com.toastedbits.leetcode.binarytrees;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinaryTreePostorderTraversal {
+public class BinaryTreePreorderTraversal {
     public static class TreeNode {
         int val;
         TreeNode left;
@@ -28,22 +28,22 @@ public class BinaryTreePostorderTraversal {
         }
     }
 
-    private List<Integer> postorderTraversal(TreeNode root, List<Integer> list) {
+    private List<Integer> preorderTraversal(TreeNode root, List<Integer> list) {
+        list.add(root.val);
         if(root.left != null) {
-            postorderTraversal(root.left, list);
+            preorderTraversal(root.left, list);
         }
         if(root.right != null) {
-            postorderTraversal(root.right, list);
+            preorderTraversal(root.right, list);
         }
-        list.add(root.val);
 
         return list;
     }
 
-    public List<Integer> postorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         if(root == null) {
             return new ArrayList<>();
         }
-        return postorderTraversal(root, new ArrayList<>());
+        return preorderTraversal(root, new ArrayList<>());
     }
 }
