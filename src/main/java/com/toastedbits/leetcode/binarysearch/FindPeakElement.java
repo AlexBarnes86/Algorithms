@@ -1,45 +1,16 @@
 package com.toastedbits.leetcode.binarysearch;
 
 public class FindPeakElement {
-    private boolean isPeak(int[] nums, int n) {
-        return n >= 0 && n < nums.length && nums[n-1] < nums[n] && nums[n] > nums[n+1];
-    }
-
-    private int findPeakElement(int[] nums, int left, int right) {
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if(isPeak(nums, mid)) {
-                return mid;
-            }
-            else if(nums[mid-1] < nums[mid]) {
-                left = mid;
-            }
-            else {
-                right = mid;
-            }
-        }
-
-        return -1;
-    }
-
     public int findPeakElement(int[] nums) {
-        if(nums == null) {
-            return -1;
+        int l = 0, r = nums.length - 1;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (nums[mid] > nums[mid + 1])
+                r = mid;
+            else
+                l = mid + 1;
         }
-        else if(nums.length == 1) {
-            return 0;
-        }
-        else if(nums.length == 2) {
-            return nums[0] < nums[1] ? 1 : 0;
-        }
-        else if(nums[0] > nums[1]) {
-            return 0;
-        }
-        else if(nums[nums.length-1] > nums[nums.length-2]) {
-            return nums.length - 1;
-        }
-
-        return findPeakElement(nums, 1, nums.length-1);
+        return l;
     }
 
     public void test1() {
