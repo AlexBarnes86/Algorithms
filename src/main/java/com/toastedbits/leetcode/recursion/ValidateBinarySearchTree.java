@@ -9,25 +9,28 @@ import java.util.List;
 import java.util.Stack;
 
 public class ValidateBinarySearchTree {
-    private boolean isValidBST(TreeNode root, Stack<Integer> stack) {
-        if(root == null) {
-            return true;
-        }
-
-        boolean isLeftValid = root.left == null || isValidBST(root.left, stack);
-        if(!stack.isEmpty() && root.val <= stack.peek()) {
-            return false;
-        }
-//        if(!stack.isEmpty()) { //reduce space complexity, We only need the most recent previous value
-//            stack.pop();
-//        }
-        stack.push(root.val);
-        boolean isRightValid = root.right == null || isValidBST(root.right, stack);
-        return isLeftValid && isRightValid;
-    }
+    private boolean isBST = true;
 
     public boolean isValidBST(TreeNode root) {
-        return isValidBST(root, new Stack<>());
+
+        dfs2(root, Long.MIN_VALUE);
+        return isBST;
+    }
+
+    public long  dfs2(TreeNode root, long prev) {
+
+        if (root == null)
+            return prev;
+        prev = dfs2(root.left, prev);
+
+        //  in order
+        if (prev >= root.val)
+            isBST = false;
+        prev = root.val;
+        //
+
+        prev=dfs2(root.right, prev);
+        return prev;
     }
 
     public static void main(String[] args) {
