@@ -1,22 +1,32 @@
 package com.toastedbits.leetcode.binarysearch;
 
+import java.util.Arrays;
+
 public class FindKthSmallestPairDistance {
-    //Brute force accepted
+    // binary search + DP
     public int smallestDistancePair(int[] nums, int k) {
-        int[] dist = new int[1_000_001];
-        for(int i = 0; i < nums.length; ++i) {
-            for(int j = i+1; j < nums.length; ++j) {
-                dist[Math.abs(nums[i]-nums[j])]++;
+        Arrays.sort(nums);
+        int n = nums.length;
+        int[] dp = new int[n+1];
+        Arrays.fill(dp, 0);
+        int lo = 0, hi = nums[n-1] - nums[0];
+
+        while (lo < hi) {
+            int mid = lo + (hi - lo) / 2;
+            int j = 1;
+            for (int i = 0; i < n-1; i++) {
+                // dp[i] stores the number of element
+                // from [0...i] that has distance between i ~ j (j > i)
+                // bigger than mid
+                while (j < n && nums[j] - nums[i] <= mid) j++;
+                dp[i+1] = dp[i] + (j-1-i);
             }
+
+            if (dp[n-1] < k) lo = mid + 1;
+            else hi = mid;
         }
-        int ct = 0;
-        for(int i = 0; i < dist.length; ++i) {
-            ct += dist[i];
-            if(ct >= k) {
-                return i;
-            }
-        }
-        return -1;
+
+        return lo;
     }
 
     public static void main(String[] args) {
