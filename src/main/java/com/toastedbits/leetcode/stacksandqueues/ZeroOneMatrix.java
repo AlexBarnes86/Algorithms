@@ -1,6 +1,7 @@
 package com.toastedbits.leetcode.stacksandqueues;
 
 import com.toastedbits.leetcode.arrays.ArrayUtil;
+import com.toastedbits.leetcode.utils.ArrayUtils;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -67,13 +68,13 @@ public class ZeroOneMatrix {
 
     public static void main(String[] args) {
         ZeroOneMatrix solver = new ZeroOneMatrix();
-        ArrayUtil.println(solver.updateMatrix(new int[][]{{0,0,0},{0,1,0},{0,0,0}}));
+        ArrayUtils.println(solver.updateMatrix(new int[][]{{0,0,0},{0,1,0},{0,0,0}}));
         System.out.println();
 
-        ArrayUtil.println(solver.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
+        ArrayUtils.println(solver.updateMatrix(new int[][]{{0,0,0},{0,1,0},{1,1,1}}));
         System.out.println();
 
-        ArrayUtil.println(solver.updateMatrix(new int[][]{{0},{0},{0},{0},{0}}));
+        ArrayUtils.println(solver.updateMatrix(new int[][]{{0},{0},{0},{0},{0}}));
         System.out.println();
     }
 }

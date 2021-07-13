@@ -1,6 +1,7 @@
 package com.toastedbits.leetcode.stacksandqueues;
 
 import com.toastedbits.leetcode.arrays.ArrayUtil;
+import com.toastedbits.leetcode.utils.ArrayUtils;
 
 import java.util.Stack;
 
@@ -50,17 +51,17 @@ public class FloodFill {
         FloodFill solver = new FloodFill();
         int [][] image = new int[][] {{0,0,0}, {0,0,0}};
         solver.floodFill(image, 0, 0, 2);
-        ArrayUtil.println(image);
+        ArrayUtils.println(image);
         System.out.println();
 
         image = new int[][] {{1,1,1},{1,1,0},{1,0,1}};
         solver.floodFill(image, 1, 1, 2);
-        ArrayUtil.println(image);
+        ArrayUtils.println(image);
         System.out.println();
 
         image = new int[][] {{0,0,0},{0,1,1}};
         solver.floodFill(image, 1, 1, 1);
-        ArrayUtil.println(image);
+        ArrayUtils.println(image);
         System.out.println();
     }
 }
