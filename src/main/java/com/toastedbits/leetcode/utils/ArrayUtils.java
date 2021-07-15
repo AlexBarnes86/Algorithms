@@ -160,4 +160,16 @@ public class ArrayUtils {
             System.out.println();
         }
     }
+
+    public static void println(char[][] ary) {
+        for(int r = 0; r < ary.length; ++r) {
+            for(int c = 0; c < ary[r].length; ++c) {
+                System.out.print(ary[r][c]);
+                if(c != ary[r].length - 1) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
