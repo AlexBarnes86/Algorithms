@@ -92,8 +92,10 @@ public class SudokuSolver {
         return clone;
     }
 
+    int count = 0;
     private char[][] soln;
     private void dfs(char[][] board, Stack<Character>[][] possibilities, int row, int col) {
+        count++;
         if(row >= board.length || col >= board[0].length || soln != null) {
             return;
         }
@@ -129,6 +131,7 @@ public class SudokuSolver {
     }
 
     public void solveSudoku(char[][] board) {
+        count = 0;
         soln = null;
         Stack<Character>[][] poss = new Stack[board.length][board[0].length];
         for (int r = 0; r < board.length; ++r) {
@@ -175,6 +178,7 @@ public class SudokuSolver {
         solveSudoku(board);
         System.out.println("Solved:");
         ArrayUtils.println(board);
+        System.out.println("Count: " + count);
     }
 
     public void test2() {
@@ -205,11 +209,44 @@ public class SudokuSolver {
         solveSudoku(board);
         System.out.println("Solved:");
         ArrayUtils.println(board);
+        System.out.println("Count: " + count);
+    }
+
+    public void test3() {
+        System.out.println("== Test 2 ==");
+        char[][] board = new char[][]{
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.','.'},
+        };
+        System.out.println("Orig:");
+        ArrayUtils.println(board);
+//        for(int r = 0; r < board.length; ++r) {
+//            for(int c = 0; c < board[0].length; ++c) {
+//                if(board[r][c] == '.') {
+//                    System.out.println("r: " + r + ", c: " + c + " -> " + getPossibilities(board, r, c));
+//                }
+//                else {
+//                    System.out.println("r: " + r + ", c: " + c + " -> " + board[r][c]);
+//                }
+//            }
+//        }
+        solveSudoku(board);
+        System.out.println("Solved:");
+        ArrayUtils.println(board);
+        System.out.println("Count: " + count);
     }
 
     public static void main(String[] args) {
         SudokuSolver solver = new SudokuSolver();
         solver.test1();
         solver.test2();
+        solver.test3();
     }
 }
